@@ -4,7 +4,7 @@ function ExperienceCard( {title, company, startDate, endDate, location} ) {
     return (
         <div className="experience-card flex gap-4 items-center p-6" >
             <img className="experience-logo" src="technicallyti.png" alt="Tarika Birch" />
-            <div className="experience-info flex justify-between w-full grid grid-cols-1 md:grid-cols-2">
+            <div className="experience-info flex justify-between w-full grid grid-cols-1 md:grid-cols-2 text-start">
                 <div className="flex flex-col items-start mb-2">
                     <p>{title}</p>
                     <p className='text-sm'>{company}</p>

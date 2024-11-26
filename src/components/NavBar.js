@@ -23,17 +23,23 @@ function NavBar() {
     ]
 
     return (
-       <nav className="flex justify-between items-center p-4">
+       <nav className="flex justify-between items-center p-4 mx-4">
             <h1>Tarika Birch</h1>
-            <ul className="flex gap-4">
+            <ul className="hidden md:flex gap-6">
                 {links.map((link) => {
                     return (
-                        <li key={link.id}>
+                        <li key={link.id} className="w-[80px]">
                             <a href={link.url}>{link.text}</a>
                         </li>
                     )
                 })}
             </ul>
+
+            <div className="md:hidden">
+                <button>
+                    <i className="fa-solid fa-bars"></i>
+                </button>
+            </div>
        </nav>
     )
 }

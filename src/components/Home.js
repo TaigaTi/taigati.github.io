@@ -9,7 +9,7 @@ function Home() {
             <section id="intro" className="h-[90vh]">
                 <div className="container flex flex-col items-center justify-center gap-2">
                     <img className="avatar" src="technicallyti.png" alt="Tarika Birch" />
-                    <h1 className='text-6xl'>Tarika Birch</h1>
+                    <h1 className='text-5xl md:text-6xl'>Tarika Birch</h1>
                     <img className="frontend" src="frontend.png" alt="Frontend Developer" />
 
                     <button className="resume-button rounded mt-5 p-2 flex gap-2 items-center justify-space-between">
