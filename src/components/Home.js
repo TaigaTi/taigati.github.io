@@ -14,7 +14,7 @@ function Home() {
                     <h1 className='text-5xl md:text-6xl mb-1'>Tarika Birch</h1>
                     <img className="frontend" src="frontend.png" alt="Frontend Developer" />
 
-                    <a className="text-lg resume-button rounded mt-5 px-6 py-1 flex gap-2 items-center hover:scale-105 ease-in" 
+                    <a className="text-lg resume-button rounded mt-5 px-6 py-1 flex gap-2 items-center hover:scale-105 ease-in"
                         download="Tarika_Birch-Resume.pdf" href="assets/Tarika_Birch-Resume.pdf">
                         <i class="fa-regular fa-circle-down mr-1"></i>
                         <p>Resume</p>
@@ -69,7 +69,7 @@ function Home() {
                     <div className="flex flex-col items-center justify-center gap-2">
                         <p className='md:text-lg p-2 pt-1 md:p-6 md:pt-1'>Frontend developer who enjoys crafting user-friendly experiences</p>
 
-                        <div className='flex flex-col md:flex-row gap-4 grid sm:grid-cols-1 md:grid-cols-2'>
+                        <div className='flex flex-col md:flex-row gap-4 grid sm:grid-cols-2 md:grid-cols-2'>
                             <div className='about-card px-6'>
                                 <p className='text-6xl mb-2'>📚</p>
                                 <p className='pb-2 text-lg'>Bsc. Computer Science with Management</p>
@@ -101,20 +101,51 @@ function Home() {
                 </div>
             </section>
 
-            <section id="experience" className="md:h-screen py-6">
+            <section id="experience" className="my-10 py-10">
                 <div id="experience-jobs" className='mt-10 md:mt-0'>
                     <h1 className="text-2xl">Experience</h1>
 
                     <div className="experience-container flex flex-col gap-4 mt-4 p-5">
-                        <ExperienceCard title="Software Developer" company="Pellucid IT" startDate="Jul 2024" endDate="Present" location="Remote" />
-                        <ExperienceCard title="Software Developer" company="Pellucid IT" startDate="Jan 2024" endDate="Jul 2024" location="Remote" />
-                        <ExperienceCard title="Judiciary Software Engineer" company="National Center for State Courts" startDate="Jul 2023" endDate="Aug 2023" location="Remote" />
-                        <ExperienceCard title="Digital Transformation Intern" company="Central Bank of Barbados" startDate="Jun 2023" endDate="Jul 2023" location="Remote" />
+                        <ExperienceCard
+                            title="Software Developer"
+                            company="Pellucid IT"
+                            startDate="Jul 2024"
+                            endDate="Present"
+                            location="Remote"
+                            logo="assets/logos/pellucid.png"
+                        />
+
+                        <ExperienceCard
+                            title="Software Developer"
+                            company="Pellucid IT"
+                            startDate="Jan 2024"
+                            endDate="Jul 2024"
+                            location="Remote"
+                            logo="assets/logos/pellucid.png"
+                        />
+
+                        <ExperienceCard
+                            title="Judiciary Software Engineer"
+                            company="National Center for State Courts"
+                            startDate="Jul 2023"
+                            endDate="Aug 2023"
+                            location="Remote"
+                            logo="assets/logos/ncsc.jpg"
+                        />
+
+                        <ExperienceCard
+                            title="Digital Transformation Intern"
+                            company="Central Bank of Barbados"
+                            startDate="Jun 2023"
+                            endDate="Jul 2023"
+                            location="Remote"
+                            logo="assets/logos/cbb.png"
+                        />
                     </div>
                 </div>
             </section>
 
-            <section id="projects" className='w-full p-2 md:p-10 my-10'>
+            <section id="projects" className='w-full p-2 md:p-10'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Latest Projects</h1>
                     <button>View All</button>
@@ -128,7 +159,7 @@ function Home() {
 
             </section>
 
-            <section id="Awards" className='w-full p-2 md:p-10 my-10'>
+            <section id="Awards" className='w-full p-10 px-2 md:p-10 my-12 md:my-0'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Awards</h1>
                     <button>View All</button>
