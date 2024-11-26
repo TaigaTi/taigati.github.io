@@ -1,9 +1,11 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../styles/Home.css'
+import Socials from './Socials';
+import ExperienceCard from './ExperienceCard';
 
 function Home() {
     return (
-        <>
+        <div className='display flex flex-col items-center'>
             <section id="intro" className="h-[90vh]">
                 <div className="container flex flex-col items-center justify-center gap-2">
                     <img className="avatar" src="technicallyti.png" alt="Tarika Birch" />
@@ -15,26 +17,107 @@ function Home() {
                         Resume
                     </button>
 
-                    <div className="socials flex gap-4 mt-2 text-2xl">
-                        <a href="mailto:tarikabirch@gmail.com">
-                            <i className="fa fa-envelope"></i>
-                        </a>
-                        <a href="https://github.com/taigati">
-                            <i className="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/tarika-birch/">
-                            <i className="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="https://medium.com/@tarikabirch">
-                            <i className="fa-brands fa-medium"></i>
-                        </a>
-                        <a href="http://www.youtube.com/channel/UCuUPNYwnqCY2eSfPmztEsng?sub_confirmation=1">
-                            <i className="fa-brands fa-youtube"></i>
-                        </a>
+                    <Socials />
+                </div>
+            </section>
+
+            <div className='divider p-20'></div>
+
+            <section id="tools" className="h-screen pt-6">
+                <div className="container flex flex-col items-center justify-center gap-2">
+                    <h1 className='text-4xl'>Bringing Ideas To Life</h1>
+
+                    <div className="flex gap-6 p-6">
+                        <div className='tech-skills flex flex-col items-center'>
+                            <h1 className='text-2xl pb-6'>Tech Skills</h1>
+                            <div className='tech-skills-logos flex column grid grid-cols-4 gap-8'>
+                                <img src='assets/tech-skills/typescript.svg' alt="TypeScript" />
+                                <img src='assets/tech-skills/javascript.svg' alt="JavaScript" />
+                                <img src='assets/tech-skills/react.svg' alt="React" />
+                                <img src='assets/tech-skills/angular.svg' alt="Angular" />
+                                <img src='assets/tech-skills/tailwind.svg' alt="Tailwind" />
+                                <img src='assets/tech-skills/bootstrap.svg' alt="Bootstrap" />
+                                <img src='assets/tech-skills/nodejs.svg' alt="NodeJS" />
+                                <img src='assets/tech-skills/html.svg' alt="HTML" />
+                                <img src='assets/tech-skills/css.svg' alt="CSS" />
+                                <img src='assets/tech-skills/drupal.png' alt="Drupal" />
+                                <img src='assets/tech-skills/firebase.svg' alt="Firebase" />
+                                <img src='assets/tech-skills/python.png' alt="Python" />
+                            </div>
+                        </div>
+                        <div className='design-tools flex flex-col items-center'>
+                            <h1 className='text-2xl pb-6'>Design Tools</h1>
+                            <div className='design-tools-logos flex column grid grid-cols-3 gap-8'>
+                                <img src='assets/design-tools/figma.svg' alt="Figma" />
+                                <img src='assets/design-tools/illustrator.png' alt="Illustrator" />
+                                <img src='assets/design-tools/procreate.webp' alt="Procreate" />
+                                <img src='assets/design-tools/canva.png' alt="Canva" />
+                                <img src='assets/design-tools/lightroom.png' alt="Lightroom" />
+                                <img src='assets/design-tools/photoshop.svg' alt="Photoshop" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-        </>
+
+            <section id="experience" className="h-screen pt-6 grid sm:grid-cols-1 lg:grid-cols-2">
+                <div id="experience-about">
+                    <div className='description flex flex-col items-start pb-4'>
+                        <h1 className='text-4xl'>Tarika Birch</h1>
+                        <h2 className='text-2xl'>Frontend Developer</h2>
+                        <p>Blending creativity with innovation!</p>
+                    </div>
+
+                    <div className="flex flex-col gap-4 mt-4 pb-10">
+                        <div className="flex gap-4">
+                            <p>🎓</p>
+                            <div className="flex flex-col items-start">
+                                <p>Bsc. Computer Science with Management</p>
+                                <p>Expected Graduation: May 2025</p>
+                                <p>GPA: 3.85</p>
+                            </div>
+                        </div>
+                        <div className="flex gap-4">
+                            <p>📓</p>
+                            <div className="flex flex-col items-start">
+                                <p>Secretary of the Computer Science Society</p>
+                                <p>FST, UWI Cave Hill</p>
+                            </div>
+                        </div>
+                        <div className="flex gap-4">
+                            <p>🏆</p>
+                            <div className="flex flex-col items-start">
+                                <p>Award-Winning Artist with 7 years of</p> 
+                                <p> experience in art and design</p>
+                            </div>
+                        </div>
+                        <div className="flex gap-4">
+                            <p>🎨</p>
+                            <div className="flex flex-col items-start">
+                                <p>Founder of an art and design company</p>
+                                <p>Querencia Studios</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="divider py-10"></div>
+
+                    <Socials />
+                </div>
+
+                <div id="experience-jobs">
+                    <h1 className="text-2xl">Experience</h1>
+
+                    <div className="experience-container flex flex-col gap-4 mt-4">
+                        <ExperienceCard />
+                        <ExperienceCard />
+                        <ExperienceCard />
+                        <ExperienceCard />
+                    </div>
+
+                </div>
+            </section>
+        </div>
     )
 }
 
