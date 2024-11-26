@@ -62,54 +62,44 @@ function Home() {
                 </div>
             </section>
 
-            <section id="experience" className="md:h-screen pt-6 grid sm:grid-cols-1 lg:grid-cols-2">
-                <div id="experience-about" className='h-[90vh] p-6'>
-                    <div className='description flex flex-col md:items-start pb-4'>
-                        <h1 className='text-4xl'>Tarika Birch</h1>
-                        <h2 className='text-lg md:text-2xl'>Frontend Developer</h2>
-                        <p className='mt-4 md:mt-0'>Blending creativity with innovation!</p>
-                    </div>
+            <section id="experience-about" className="p-6">
+                <div className="container">
+                    <h1 className='text-2xl md:text-4xl'>Who Am I?</h1>
+                    <div className="flex flex-col items-center justify-center gap-2">
+                        <p className='md:text-lg p-2 pt-1 md:p-6 md:pt-1 '>Frontend developer who enjoys crafting user-friendly experiences</p>
 
-                    <div className="flex flex-col gap-4 mt-4 pb-10">
-                        <div className="flex gap-4">
-                            <p>🎓</p>
-                            <div className="flex flex-col items-start text-start">
-                                <p>Bsc. Computer Science with Management</p>
-                                <p>Expected Graduation: May 2025</p>
-                                <p>GPA: 3.85</p>
+                        <div className='flex flex-col md:flex-row gap-4 grid sm:grid-cols-1 md:grid-cols-2'>
+                            <div className='about-card px-6'>
+                                <p className='text-6xl mb-2'>📚</p>
+                                <p className='pb-2 text-lg'>Bsc. Computer Science with Management</p>
+                                <p className='opacity-80'>Expected Grad: May 2025</p>
+                                <p className='opacity-80'>GPA: 3.85</p>
+                            </div>
+
+                            <div className='about-card px-6'>
+                                <p className='text-6xl mb-2'>💻</p>
+                                <p className='pb-2 text-lg'>Secretary of the Computer Science Society</p>
+                                <p className='opacity-80'>FST, UWI Cave Hill</p>
+                                <p className='opacity-80'>Sep 2023 - Present</p>
+                            </div>
+                            
+                            <div className='about-card px-6'>
+                                <p className='text-6xl mb-2'>🏆</p>
+                                <p className='pb-2 text-lg px-8'>Award-Winning Artist</p>
+                                <p className='opacity-80'>7 years of experience</p>
+                            </div>
+
+                            <div className='about-card px-6'>
+                                <p className='text-6xl mb-2'>🎨</p>
+                                <p className='pb-2 text-lg'>Founder of Querencia Studios</p>
+                                <p className='opacity-80'>Art & Design Company</p>
                             </div>
                         </div>
-                        <div className="flex gap-4">
-                            <p>📓</p>
-                            <div className="flex flex-col items-start text-start">
-                                <p>Secretary of the Computer Science Society</p>
-                                <p>FST, UWI Cave Hill</p>
-                            </div>
-                        </div>
-                        <div className="flex gap-4">
-                            <p>🏆</p>
-                            <div className="flex flex-col items-start text-start">
-                                <p>Award-Winning Artist with 7 years of</p>
-                                <p> experience in art and design</p>
-                            </div>
-                        </div>
-                        <div className="flex gap-4">
-                            <p>🎨</p>
-                            <div className="flex flex-col items-start text-start">
-                                <p>Founder of an art and design company</p>
-                                <p>Querencia Studios</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="divider md:py-10"></div>
-
-                    <div className='flex flex-col md:items-start items-center'>
-                        <Socials />
-
                     </div>
                 </div>
+            </section>
 
+            <section id="experience" className="md:h-screen py-6">
                 <div id="experience-jobs" className='mt-10 md:mt-0'>
                     <h1 className="text-2xl">Experience</h1>
 
@@ -119,7 +109,6 @@ function Home() {
                         <ExperienceCard title="Judiciary Software Engineer" company="National Center for State Courts" startDate="Jul 2023" endDate="Aug 2023" location="Remote" />
                         <ExperienceCard title="Digital Transformation Intern" company="Central Bank of Barbados" startDate="Jun 2023" endDate="Jul 2023" location="Remote" />
                     </div>
-
                 </div>
             </section>
 
@@ -150,7 +139,7 @@ function Home() {
                 </div>
 
             </section>
-      
+
             <section id="Certificates" className='w-full p-2 md:p-10'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Certificates</h1>
@@ -158,16 +147,16 @@ function Home() {
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
-                    <AwardCard type={"certificate"}/>
-                    <AwardCard type={"certificate"}/>
-                    <AwardCard type={"certificate"}/>
+                    <AwardCard type={"certificate"} />
+                    <AwardCard type={"certificate"} />
+                    <AwardCard type={"certificate"} />
                 </div>
 
             </section>
 
             <section className='h-screen p-10'>
                 <div className='h-full flex justify-center items-center'>
-                    <img src="frontend.png" alt='Frontend Developer' width={800}/>
+                    <img src="frontend.png" alt='Frontend Developer' width={800} />
                 </div>
             </section>
 
