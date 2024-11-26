@@ -23,7 +23,7 @@ function Home() {
 
             <div className='divider p-20'></div>
 
-            <section id="tools" className="md:h-screen pt-6">
+            <section id="tools" className="h-screen pt-6">
                 <div className="container flex flex-col items-center justify-center gap-2">
                     <h1 className='text-2xl md:text-4xl'>Bringing Ideas To Life</h1>
 
@@ -61,7 +61,7 @@ function Home() {
             </section>
 
             <section id="experience" className="md:h-screen pt-6 grid sm:grid-cols-1 lg:grid-cols-2">
-                <div id="experience-about" className='p-6'>
+                <div id="experience-about" className='h-[90vh] p-6'>
                     <div className='description flex flex-col md:items-start pb-4'>
                         <h1 className='text-4xl'>Tarika Birch</h1>
                         <h2 className='text-lg md:text-2xl'>Frontend Developer</h2>
