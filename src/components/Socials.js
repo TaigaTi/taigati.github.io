@@ -1,6 +1,6 @@
 function Socials() {
     return (
-        <div className="socials flex gap-4 mt-2 text-2xl w-min">
+        <div className="socials flex gap-5 mt-2 text-2xl w-min">
                         <a href="mailto:tarikabirch@gmail.com">
                             <i className="fa fa-envelope"></i>
                         </a>

@@ -11,13 +11,14 @@ function Home() {
             <section id="intro" className="h-[90vh]">
                 <div className="container flex flex-col items-center justify-center gap-2">
                     <img className="avatar" src="technicallyti.png" alt="Tarika Birch" />
-                    <h1 className='text-5xl md:text-6xl'>Tarika Birch</h1>
+                    <h1 className='text-5xl md:text-6xl mb-1'>Tarika Birch</h1>
                     <img className="frontend" src="frontend.png" alt="Frontend Developer" />
 
-                    <button className="resume-button rounded mt-5 p-2 flex gap-2 items-center justify-space-between">
-                        <i className='fa-regular fa-file'></i>
-                        Resume
-                    </button>
+                    <a className="text-lg resume-button rounded mt-5 px-6 py-1 flex gap-2 items-center hover:scale-105 ease-in" 
+                        download="Tarika_Birch-Resume.pdf" href="assets/Tarika_Birch-Resume.pdf">
+                        <i class="fa-regular fa-circle-down mr-1"></i>
+                        <p>Resume</p>
+                    </a>
 
                     <Socials />
                 </div>
@@ -82,7 +83,7 @@ function Home() {
                                 <p className='opacity-80'>FST, UWI Cave Hill</p>
                                 <p className='opacity-80'>Sep 2023 - Present</p>
                             </div>
-                            
+
                             <div className='about-card px-6'>
                                 <p className='text-6xl mb-2'>🏆</p>
                                 <p className='pb-2 text-lg px-8'>Award-Winning Artist</p>
