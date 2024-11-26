@@ -1,6 +1,6 @@
 import '../styles/ExperienceCard.css'
 
-function ExperienceCard( {title, company, startDate, endDate, location, logo} ) {
+function ExperienceCard({ title, company, startDate, endDate, location, logo }) {
     return (
         <div className="experience-card flex gap-4 items-center p-6" >
             <img className="experience-logo" src={logo} alt="" />

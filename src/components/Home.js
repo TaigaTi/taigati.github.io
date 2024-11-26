@@ -11,6 +11,11 @@ function Home() {
             <section id="intro" className="h-[90vh]">
                 <div className="container flex flex-col items-center justify-center gap-2">
                     <img className="avatar" src="technicallyti.png" alt="Tarika Birch" />
+                    <div className="cursor-container">
+                        <img className="artist-cursor" src="assets/cursors/artist-cursor.png" alt="Tarika Birch" />
+                        <img className="designer-cursor" src="assets/cursors/designer-cursor.png" alt="Tarika Birch" />
+                        <img className="developer-cursor" src="assets/cursors/developer-cursor.png" alt="Tarika Birch" />
+                    </div>
                     <h1 className='text-5xl md:text-6xl mb-1'>Tarika Birch</h1>
                     <img className="frontend" src="frontend.png" alt="Frontend Developer" />
 
@@ -105,7 +110,7 @@ function Home() {
                 <div id="experience-jobs" className='mt-10 md:mt-0'>
                     <h1 className="text-2xl">Experience</h1>
 
-                    <div className="experience-container flex flex-col gap-4 mt-4 p-5">
+                    <div className="experience-container flex flex-col gap-4 mt-4 p-2">
                         <ExperienceCard
                             title="Software Developer"
                             company="Pellucid IT"

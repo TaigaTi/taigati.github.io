@@ -6,9 +6,8 @@
 }
 
 #intro h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 1.5px;
-
 }
 
 .resume-button {
@@ -28,12 +27,74 @@
   border-radius: 50%;
 }
 
+.cursor-container {
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+  height: 25vh;
+  width: 50vw;
+}
+
+.artist-cursor {
+  position: relative;
+  top: 18vh;
+  left: 35vw;
+  width: 130px;
+  animation: artist-cursor 5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+@keyframes artist-cursor {
+  0% {
+    transform: translate(-5%, -5%) rotate(0deg) translateX(8px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-5%, -5%) rotate(360deg) translateX(8px)
+      rotate(-360deg);
+  }
+}
+
+.designer-cursor {
+  position: relative;
+  top: -2vh;
+  left: 5vw;
+  width: 130px;
+  animation: designer-cursor 5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+@keyframes designer-cursor {
+  0% {
+    transform: translate(2%, 2%) rotate(360deg) translateX(8px) rotate(-360deg);
+  }
+  100% {
+    transform: translate(2%, 2%) rotate(0deg) translateX(8px)
+      rotate(0deg);
+  }
+}
+
+.developer-cursor {
+  position: relative;
+  top: -34vh;
+  left: 30vw;
+  width: 130px;
+  animation: developer-cursor 5.8s cubic-bezier(0.32, 0, 0.8, 1) infinite;
+}
+
+@keyframes developer-cursor {
+  0% {
+    transform: translate(-5%, -5%) rotate(0deg) translateX(8px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-5%, -5%) rotate(360deg) translateX(8px)
+      rotate(-360deg);
+  }
+}
+
 .frontend {
   width: 300px;
 }
 
 .about-card {
-  background-color:  rgba(255, 255, 255, 0.047);
+  background-color: rgba(255, 255, 255, 0.047);
   border-radius: 25px;
   padding: 30px;
 }
@@ -55,14 +116,35 @@
   max-width: 50px;
 }
 
-
 @media screen and (max-width: 600px) {
   .avatar {
-    width: 70vw;
-    height: 70vw;
+    width: 65vw;
+    height: 65vw;
+    margin-bottom: 15px;
   }
 
-  .frontend { 
+  .artist-cursor {
+    position: relative;
+    top: 19vh;
+    left: 36vw;
+    width: 120px;
+  }
+
+  .designer-cursor {
+    position: relative;
+    top: -5vh;
+    left: -21vw;
+    width: 120px;
+  }
+
+  .developer-cursor {
+    position: relative;
+    top: -32vh;
+    left: 35vw;
+    width: 120px;
+  }
+
+  .frontend {
     width: 250px;
   }
 }
