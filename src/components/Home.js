@@ -23,9 +23,9 @@ function Home() {
 
             <div className='divider p-20'></div>
 
-            <section id="tools" className="h-screen pt-6">
+            <section id="tools" className="md:h-screen pt-6">
                 <div className="container flex flex-col items-center justify-center gap-2">
-                    <h1 className='text-4xl'>Bringing Ideas To Life</h1>
+                    <h1 className='text-2xl md:text-4xl'>Bringing Ideas To Life</h1>
 
                     <div className="flex gap-6 p-6 grid sm:grid-cols-1 md:grid-cols-2">
                         <div className='tech-skills flex flex-col items-center'>
@@ -60,18 +60,18 @@ function Home() {
                 </div>
             </section>
 
-            <section id="experience" className="h-screen pt-6 grid sm:grid-cols-1 lg:grid-cols-2">
-                <div id="experience-about">
-                    <div className='description flex flex-col items-start pb-4'>
+            <section id="experience" className="md:h-screen pt-6 grid sm:grid-cols-1 lg:grid-cols-2">
+                <div id="experience-about" className='p-6'>
+                    <div className='description flex flex-col md:items-start pb-4'>
                         <h1 className='text-4xl'>Tarika Birch</h1>
-                        <h2 className='text-2xl'>Frontend Developer</h2>
-                        <p>Blending creativity with innovation!</p>
+                        <h2 className='text-lg md:text-2xl'>Frontend Developer</h2>
+                        <p className='mt-4 md:mt-0'>Blending creativity with innovation!</p>
                     </div>
 
                     <div className="flex flex-col gap-4 mt-4 pb-10">
                         <div className="flex gap-4">
                             <p>🎓</p>
-                            <div className="flex flex-col items-start">
+                            <div className="flex flex-col items-start text-start">
                                 <p>Bsc. Computer Science with Management</p>
                                 <p>Expected Graduation: May 2025</p>
                                 <p>GPA: 3.85</p>
@@ -79,40 +79,43 @@ function Home() {
                         </div>
                         <div className="flex gap-4">
                             <p>📓</p>
-                            <div className="flex flex-col items-start">
+                            <div className="flex flex-col items-start text-start">
                                 <p>Secretary of the Computer Science Society</p>
                                 <p>FST, UWI Cave Hill</p>
                             </div>
                         </div>
                         <div className="flex gap-4">
                             <p>🏆</p>
-                            <div className="flex flex-col items-start">
-                                <p>Award-Winning Artist with 7 years of</p> 
+                            <div className="flex flex-col items-start text-start">
+                                <p>Award-Winning Artist with 7 years of</p>
                                 <p> experience in art and design</p>
                             </div>
                         </div>
                         <div className="flex gap-4">
                             <p>🎨</p>
-                            <div className="flex flex-col items-start">
+                            <div className="flex flex-col items-start text-start">
                                 <p>Founder of an art and design company</p>
                                 <p>Querencia Studios</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="divider py-10"></div>
+                    <div className="divider md:py-10"></div>
 
-                    <Socials />
+                    <div className='flex flex-col md:items-start items-center'>
+                        <Socials />
+
+                    </div>
                 </div>
 
-                <div id="experience-jobs">
+                <div id="experience-jobs" className='mt-10 md:mt-0'>
                     <h1 className="text-2xl">Experience</h1>
 
-                    <div className="experience-container flex flex-col gap-4 mt-4">
-                        <ExperienceCard />
-                        <ExperienceCard />
-                        <ExperienceCard />
-                        <ExperienceCard />
+                    <div className="experience-container flex flex-col gap-4 mt-4 p-5">
+                        <ExperienceCard title="Software Developer" company="Pellucid IT" startDate="Jul 2024" endDate="Present" location="Remote" />
+                        <ExperienceCard title="Software Developer" company="Pellucid IT" startDate="Jan 2024" endDate="Jul 2024" location="Remote" />
+                        <ExperienceCard title="Judiciary Software Engineer" company="National Center for State Courts" startDate="Jul 2023" endDate="Aug 2023" location="Remote" />
+                        <ExperienceCard title="Digital Transformation Intern" company="Central Bank of Barbados" startDate="Jun 2023" endDate="Jul 2023" location="Remote" />
                     </div>
 
                 </div>

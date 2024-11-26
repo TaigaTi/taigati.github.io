@@ -1,17 +1,17 @@
 import '../styles/ExperienceCard.css'
 
-function ExperienceCard() {
+function ExperienceCard( {title, company, startDate, endDate, location} ) {
     return (
-        <div className="experience-card flex gap-4 items-center p-8" >
+        <div className="experience-card flex gap-4 items-center p-6" >
             <img className="experience-logo" src="technicallyti.png" alt="Tarika Birch" />
-            <div className="experience-info flex flex-col grid grid-cols-2 ">
-                <div className="flex flex-col items-start mx-2">
-                    <p>Software Developer</p>
-                    <p>Pellucid IT</p>
+            <div className="experience-info flex justify-between w-full grid grid-cols-1 md:grid-cols-2">
+                <div className="flex flex-col items-start mb-2">
+                    <p>{title}</p>
+                    <p className='text-sm'>{company}</p>
                 </div>
-                <div className='flex flex-col items-end mx-2'>
-                    <p>Jul 2024 - Present</p>
-                    <p>Remote</p>
+                <div className='flex flex-col items-start md:items-end'>
+                    <p className='text-sm'>{startDate} - {endDate}</p>
+                    <p className='text-sm'>{location}</p>
                 </div>
             </div>
         </div>

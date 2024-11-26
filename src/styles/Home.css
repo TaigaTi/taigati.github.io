@@ -27,16 +27,14 @@
   padding: 30px;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.047);
-  width: 40vw;
-  height: 60vh;
 }
 
 .tech-skills-logos img {
-  height: 50px;
-  width: 50px;
+  max-height: 50px;
+  max-width: 50px;
 }
 
 .design-tools-logos img {
-  height: 50px;
-  width: 50px;
+  max-height: 50px;
+  max-width: 50px;
 }
