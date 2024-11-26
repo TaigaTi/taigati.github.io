@@ -123,7 +123,7 @@ function Home() {
                 </div>
             </section>
 
-            <section id="projects" className='w-full p-10'>
+            <section id="projects" className='w-full p-2 md:p-10 my-10'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Latest Projects</h1>
                     <button>View All</button>
@@ -137,7 +137,7 @@ function Home() {
 
             </section>
 
-            <section id="Awards" className='w-full p-10'>
+            <section id="Awards" className='w-full p-2 md:p-10 my-10'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Awards</h1>
                     <button>View All</button>
@@ -151,7 +151,7 @@ function Home() {
 
             </section>
       
-            <section id="Certificates" className='w-full p-10'>
+            <section id="Certificates" className='w-full p-2 md:p-10'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Certificates</h1>
                     <button>View All</button>
@@ -165,7 +165,7 @@ function Home() {
 
             </section>
 
-            <section className='h-screen'>
+            <section className='h-screen p-10'>
                 <div className='h-full flex justify-center items-center'>
                     <img src="frontend.png" alt='Frontend Developer' width={800}/>
                 </div>
