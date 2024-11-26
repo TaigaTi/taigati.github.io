@@ -1,5 +1,14 @@
 .App {
-  background: linear-gradient(150deg, #050542, #21043e, #3c074e, #21043e, #050542);
+  background: linear-gradient(
+    150deg,
+    #050542,
+    #21043e,
+    #3c074e,
+    #21043e,
+    #050542,
+    #21043e,
+    #3c074e
+  );
   text-align: center;
   color: white;
   min-height: 100vh;

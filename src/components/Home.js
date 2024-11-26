@@ -2,6 +2,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../styles/Home.css'
 import Socials from './Socials';
 import ExperienceCard from './ExperienceCard';
+import ProjectPreview from './ProjectPreview';
+import AwardCard from './AwardCard';
 
 function Home() {
     return (
@@ -119,6 +121,58 @@ function Home() {
                     </div>
 
                 </div>
+            </section>
+
+            <section id="projects" className='w-full p-10'>
+                <div className='flex justify-between px-8'>
+                    <h1 className="text-2xl">Latest Projects</h1>
+                    <button>View All</button>
+                </div>
+
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
+                    <ProjectPreview />
+                    <ProjectPreview />
+                    <ProjectPreview />
+                </div>
+
+            </section>
+
+            <section id="Awards" className='w-full p-10'>
+                <div className='flex justify-between px-8'>
+                    <h1 className="text-2xl">Awards</h1>
+                    <button>View All</button>
+                </div>
+
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
+                    <AwardCard type={"award"} />
+                    <AwardCard type={"award"} />
+                    <AwardCard type={"award"} />
+                </div>
+
+            </section>
+      
+            <section id="Certificates" className='w-full p-10'>
+                <div className='flex justify-between px-8'>
+                    <h1 className="text-2xl">Certificates</h1>
+                    <button>View All</button>
+                </div>
+
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
+                    <AwardCard type={"certificate"}/>
+                    <AwardCard type={"certificate"}/>
+                    <AwardCard type={"certificate"}/>
+                </div>
+
+            </section>
+
+            <section className='h-screen'>
+                <div className='h-full flex justify-center items-center'>
+                    <img src="frontend.png" alt='Frontend Developer' width={800}/>
+                </div>
+            </section>
+
+            <section className='p-10'>
+                <p>Made with <i className="fa-regular fa-heart"></i> by Tarika Birch</p>
             </section>
         </div>
     )
