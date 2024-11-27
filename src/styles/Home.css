@@ -55,8 +55,8 @@
 
 .designer-cursor {
   position: relative;
-  top: -2vh;
-  left: 5vw;
+  top: -3vh;
+  left: 8vw;
   width: 130px;
   animation: designer-cursor 5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 }
@@ -73,7 +73,7 @@
 
 .developer-cursor {
   position: relative;
-  top: -34vh;
+  top: -33vh;
   left: 30vw;
   width: 130px;
   animation: developer-cursor 5.8s cubic-bezier(0.32, 0, 0.8, 1) infinite;
@@ -146,5 +146,60 @@
 
   .frontend {
     width: 250px;
+  }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .avatar {
+    width: 40vw;
+    height: 40vw;
+    margin-bottom: 15px;
+  }
+
+  .artist-cursor {
+    position: relative;
+    top: 22vh;
+    left: 36vw;
+    width: 120px;
+  }
+
+  .designer-cursor {
+    position: relative;
+    top: -5vh;
+    left: -2vw;
+    width: 120px;
+  }
+
+  .developer-cursor {
+    position: relative;
+    top: -30vh; 
+    left: 34vw;
+    width: 120px;
+  }
+
+}
+
+
+@media screen and (min-width: 1800px) {
+  .artist-cursor {
+    position: relative;
+    top: 28vh;
+    left: 34vw;
+    width: 150px;
+  }
+
+  .designer-cursor {
+    position: relative;
+    top: -5vh;
+    left: 8vw;
+    width: 150px;
+  }
+
+  .developer-cursor {
+    position: relative;
+    top: -48vh;
+    left: 32vw;
+    width: 150px;
   }
 }

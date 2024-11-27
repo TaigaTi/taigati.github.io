@@ -193,6 +193,7 @@ function Home() {
             </section>
 
             <section className='h-screen p-10'>
+                
                 <div className='h-full flex justify-center items-center'>
                     <img src="frontend.png" alt='Frontend Developer' width={800} />
                 </div>
