@@ -1,10 +1,11 @@
 import '../styles/About.css'
 import Socials from './Socials'
+import Skills from './Skills'
 
 function About() {
     return (
         <>
-            <section className="section container flex flex-col items-center h-[90vh] grid grid-cols-1 md:grid-cols-3">
+            <section className="section container flex flex-col items-center min-h-[90vh] grid grid-cols-1 md:grid-cols-3 gap-12">
                 <div className="container flex flex-col items-center">
                     <img className="avatar" src="technicallyti.png" alt="Tarika Birch" />
                     <div className='flex flex-col items-center gap-2 mt-5'>
@@ -64,23 +65,35 @@ function About() {
                 <div className="container flex flex-col items-center">
                     <h1 className='text-3xl md:text-4xl mb-3'>What Have I Done?</h1>
                     <div className='flex flex-col gap-4'>
-                        <div className='about-card px-6 flex items-center gap-4'>
-                            <p className='text-6xl mb-2'>👩🏻‍💻</p>
-                            <div className='text-start'>
-                                <p className='pb-2 text-lg'>Frontend Developer</p>
-                                <p className='opacity-80'>HTML, CSS, JavaScript</p>
+                        <div className='about-card px-6 flex flex-col items-center gap-4 w-full'>
+                            <h1 className='text-lg'>Relevant Coursework</h1>
+                            <div className='opacity-80 grid grid-cols-2 gap-10 text-start text-sm'>
+                                <ul className='list-disc'>
+                                    <li>Algorithms</li>
+                                    <li>Data Structures</li>
+                                    <li>Software Engineering</li>
+                                </ul>
+                                <ul className='list-disc'>
+                                    <li>UI Design</li>
+                                    <li>Principles of Marketing</li>
+                                    <li>DB Management Systems I</li>
+                                </ul>
                             </div>
                         </div>
 
+                        <div className='about-card px-6 flex items-center gap-4 opacity-90'>
+                            <img src="https://github-readme-stats.vercel.app/api?username=taigati&show_icons=true&theme=transparent&hide_border=true&title_color=f60cd7&text_color=ffffff&icon_color=f60cd7&rank_icon=github" alt="Github" />
+                        </div>
+
                         <div className='about-card px-6 flex items-center gap-4'>
-                            <p className='text-6xl mb-2'>🎨</p>
-                            <div className='text-start'>
-                                <p className='pb-2 text-lg'>Graphic Designer</p>
-                                <p className='opacity-80'>Adobe Illustrator</p>
-                            </div>
+                            <img src="https://leetcode-badge-sage.vercel.app/badge/tarikabirch?theme=dark" alt="Leetcode" />
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section className="section container flex flex-col items-center min-h-[90vh]">
+                <Skills />
             </section>
         </>
     )
