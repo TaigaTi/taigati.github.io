@@ -1,6 +1,6 @@
 import '../styles/ProjectPreview.css'
 
-function ProjectPreview() {
+function ProjectPreview({name, description, tags}) {
     return (
         <>
             <div className="project-preview text-start" >

@@ -2,22 +2,22 @@ function NavBar() {
     const links = [
         {
             id: 1,
-            url: '#home',
+            url: '/',
             text: 'Home'
         },
         {
             id: 2,
-            url: '#about',
+            url: 'about',
             text: 'About'
         },
         {
             id: 3,
-            url: '#projects',
+            url: 'projects',
             text: 'Projects'
         },
         {
             id: 4,
-            url: '#contact',
+            url: 'contact',
             text: 'Contact'
         }
     ]
