@@ -4,8 +4,8 @@ import Skills from './Skills'
 
 function About() {
     return (
-        <>
-            <section className="section container flex flex-col min-h-screen min-w-full grid grid-cols-1 md:grid-cols-3 gap-6 p-10">
+        <div className="about flex flex-col items-center p-10">
+            <section className="section container flex flex-col min-h-screen min-w-full grid grid-cols-1 md:grid-cols-3 gap-6 mt-5">
                 <div className="container flex flex-col items-center">
                     <img className="about-avatar" src="technicallyti.png" alt="Tarika Birch" />
                     <div className='flex flex-col items-center gap-2 mt-5'>
@@ -74,10 +74,12 @@ function About() {
                 </div>
             </section>
 
-            <section className="section container flex flex-col items-center min-h-[90vh]">
-                <Skills />
+            <section className="section container flex flex-col items-center min-h-[80vh]">
+                <div className='w-full flex flex-col items-center'>
+                    <Skills />
+                </div>
             </section>
-        </>
+        </div>
     )
 }
 

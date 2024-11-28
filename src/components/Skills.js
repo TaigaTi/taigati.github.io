@@ -1,6 +1,6 @@
 function Skills() {
     return (
-        <div className="flex gap-6 p-6 grid sm:grid-cols-1 md:grid-cols-2">
+        <div className="flex gap-6 p-6 grid sm:grid-cols-1 md:grid-cols-2 w-full">
             <div className='tech-skills flex flex-col items-center'>
                 <h1 className='text-2xl pb-6'>Tech Skills</h1>
                 <div className='tech-skills-logos flex column grid grid-cols-4 gap-8'>
