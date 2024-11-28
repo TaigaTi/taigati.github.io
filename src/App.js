@@ -1,4 +1,4 @@
-import {  Routes, Route, HashRouter, BrowserRouter } from 'react-router-dom';
+import {  Routes, Route, HashRouter } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='App font-montserrat'>
       <NavBar />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -19,7 +19,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/*" element={<Error />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
     </div>
   );
