@@ -5,7 +5,7 @@ import Skills from './Skills'
 function About() {
     return (
         <>
-            <section className="section container flex flex-col items-center min-h-[90vh] grid grid-cols-1 md:grid-cols-3 gap-12">
+            <section className="section container flex flex-col min-h-screen min-w-full grid grid-cols-1 md:grid-cols-3 gap-6 p-10">
                 <div className="container flex flex-col items-center">
                     <img className="about-avatar" src="technicallyti.png" alt="Tarika Birch" />
                     <div className='flex flex-col items-center gap-2 mt-5'>
@@ -21,12 +21,11 @@ function About() {
                 </div>
 
                 <div className="container flex flex-col items-center">
-                    <h1 className='text-3xl md:text-4xl mb-3'>Who Am I?</h1>
                     <div className='flex flex-col gap-4'>
-                        <div className='about-card px-6 flex items-center gap-4 '>
+                        <div className='about-card px-6 flex items-center gap-4'>
                             <p className='text-6xl mb-2'>📚</p>
                             <div className='text-start'>
-                                <p className='pb-2 text-lg'>Bsc. Computer Science with Management</p>
+                                <p className='pb-1 text-lg'>Bsc. Computer Science with Management</p>
                                 <p className='opacity-80'>Expected Grad: May 2025</p>
                                 <p className='opacity-80'>GPA: 3.85</p>
                             </div>
@@ -35,7 +34,7 @@ function About() {
                         <div className='about-card px-6 flex items-center gap-4'>
                             <p className='text-6xl mb-2'>💻</p>
                             <div className='text-start'>
-                                <p className='pb-2 text-lg'>Secretary of the Computer Science Society</p>
+                                <p className='pb-1 text-lg'>Secretary of the Computer Science Society</p>
                                 <p className='opacity-80'>FST, UWI Cave Hill</p>
                                 <p className='opacity-80'>Sep 2023 - Present</p>
                             </div>
@@ -44,7 +43,7 @@ function About() {
                         <div className='about-card px-6 flex items-center gap-4'>
                             <p className='text-6xl mb-2'>🏆</p>
                             <div className='text-start'>
-                                <p className='pb-2 text-lg'>Award-Winning Artist</p>
+                                <p className='pb-1 text-lg'>Award-Winning Artist</p>
                                 <p className='opacity-80'>7 years of experience</p>
                             </div>
                         </div>
@@ -52,7 +51,7 @@ function About() {
                         <div className='about-card px-6 flex items-center gap-4'>
                             <p className='text-6xl mb-2'>🎨</p>
                             <div className='text-start w-full'>
-                                <p className='pb-2 text-lg'>Founder of Querencia Studios</p>
+                                <p className='pb-1 text-lg'>Founder of Querencia Studios</p>
                                 <p className='opacity-80'>Art & Design Company</p>
                                 <a href="https://querenciastudios.company.site" className='opacity-80 flex justify-end'>
                                     <i className="fa-solid fa-arrow-up-right-from-square"></i>
@@ -63,7 +62,6 @@ function About() {
                 </div>
 
                 <div className="container flex flex-col items-center">
-                    <h1 className='text-3xl md:text-4xl mb-3'>What Have I Done?</h1>
                     <div className='flex flex-col gap-4'>
                         <div className='about-card px-6 flex flex-col items-center gap-4 w-full'>
                             <h1 className='text-lg'>Relevant Coursework</h1>
