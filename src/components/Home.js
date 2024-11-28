@@ -115,7 +115,7 @@ function Home() {
                             company="Central Bank of Barbados"
                             startDate="Jun 2023"
                             endDate="Jul 2023"
-                            location="Remote"
+                            location="Barbados"
                             logo="assets/logos/cbb.png"
                         />
                     </div>

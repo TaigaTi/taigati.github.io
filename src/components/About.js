@@ -1,6 +1,7 @@
 import '../styles/About.css'
 import Socials from './Socials'
 import Skills from './Skills'
+import ExperienceCard from './ExperienceCard'
 
 function About() {
     return (
@@ -74,15 +75,73 @@ function About() {
                         </div>
 
                         <div className='px-5 about-card quote-card flex items-center justify-center gap-4'>
-                           <p className='text-sm text-center opacity-70'>Every pixel has a purpose!</p>
+                            <p className='text-sm text-center opacity-70'>Every pixel has a purpose!</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="section flex flex-col items-center min-h-[80vh] w-full mt-10">
+            <section className="section flex flex-col items-center w-full mt-10">
                 <p className='text-2xl md:text-4xl mb-6'>My Skills</p>
-                    <Skills />
+                <Skills />
+            </section>
+
+            <section id="experience" className="my-10 py-10">
+                <div id="experience-jobs" className='mt-10 md:mt-0'>
+
+                    <h1 className="text-2xl">Education</h1>
+
+                    <div className="experience-container flex flex-col gap-4 mt-4 p-2 pb-10">
+                        <ExperienceCard
+                            title="Bsc. Computer Science with Management"
+                            company="University of the West Indies, Cave Hill"
+                            startDate="Sep 2021"
+                            endDate="Present"
+                            location="Barbados"
+                            logo="assets/logos/uwi.png"
+                        />
+                    </div>
+
+                    <h1 className="text-2xl">Experience</h1>
+
+                    <div className="experience-container flex flex-col gap-4 mt-4 p-2">
+                        <ExperienceCard
+                            title="Software Developer"
+                            company="Pellucid IT"
+                            startDate="Jul 2024"
+                            endDate="Present"
+                            location="Remote"
+                            logo="assets/logos/pellucid.png"
+                        />
+
+                        <ExperienceCard
+                            title="Software Developer"
+                            company="Pellucid IT"
+                            startDate="Jan 2024"
+                            endDate="Jul 2024"
+                            location="Remote"
+                            logo="assets/logos/pellucid.png"
+                        />
+
+                        <ExperienceCard
+                            title="Judiciary Software Engineer"
+                            company="National Center for State Courts"
+                            startDate="Jul 2023"
+                            endDate="Aug 2023"
+                            location="Remote"
+                            logo="assets/logos/ncsc.jpg"
+                        />
+
+                        <ExperienceCard
+                            title="Digital Transformation Intern"
+                            company="Central Bank of Barbados"
+                            startDate="Jun 2023"
+                            endDate="Jul 2023"
+                            location="Barbados"
+                            logo="assets/logos/cbb.png"
+                        />
+                    </div>
+                </div>
             </section>
         </div>
     )
