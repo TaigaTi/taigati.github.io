@@ -6,7 +6,7 @@ function About() {
     return (
         <div className="about flex flex-col items-center p-10">
             <section className="section container flex flex-col min-h-screen min-w-full grid grid-cols-1 lg:grid-cols-3 gap-6 mt-5">
-                <div className="container flex flex-col items-center">
+                <div className="container flex flex-col items-center my-10">
                     <img className="about-avatar" src="technicallyti.png" alt="Tarika Birch" />
                     <div className='flex flex-col items-center gap-2 mt-5'>
                         <h1 className='text-5xl md:text-6xl mb-1'>Tarika Birch</h1>
@@ -16,12 +16,14 @@ function About() {
                             <i class="fa-regular fa-circle-down mr-1"></i>
                             <p>Resume</p>
                         </a>
-                        <Socials />
+                        <div className="mt-2">
+                            <Socials />
+                        </div>
                     </div>
                 </div>
 
-                <div className="container flex flex-col items-center">
-                    <div className='flex flex-col gap-4'>
+                <div className="container flex flex-col items-center my-10">
+                    <div className='flex flex-col gap-4 w-full'>
                         <div className='about-card px-6 flex items-center gap-4'>
                             <p className='text-5xl'>📚</p>
                             <div className='text-start'>
@@ -61,10 +63,10 @@ function About() {
                     </div>
                 </div>
 
-                <div className="container flex flex-col items-center">
-                    <div className='flex flex-col gap-4'>
+                <div className="container flex flex-col items-center my-10">
+                    <div className='flex flex-col gap-4 w-full'>
                         <div className='about-card px-6 flex items-center gap-4 opacity-90'>
-                            <img src="https://github-readme-stats.vercel.app/api?username=taigati&show_icons=true&theme=transparent&hide_border=true&title_color=f60cd7&text_color=ffffff&icon_color=f60cd7&rank_icon=github" alt="Github" />
+                            <img src="https://github-readme-stats-mauve-zeta.vercel.app/api?username=taigati&show_icons=true&theme=transparent&hide_border=true&title_color=f60cd7&text_color=ffffff&icon_color=f60cd7&rank_icon=github&include_all_commits=true" alt="Github" />
                         </div>
 
                         <div className='about-card px-6 flex items-center gap-4'>

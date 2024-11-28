@@ -73,7 +73,7 @@
 
 .developer-cursor {
   position: relative;
-  top: -33vh;
+  top: -42vh;
   left: 30vw;
   width: 130px;
   animation: developer-cursor 5.8s cubic-bezier(0.32, 0, 0.8, 1) infinite;
@@ -150,7 +150,7 @@
 }
 
 
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .avatar {
     width: 40vw;
     height: 40vw;
@@ -159,7 +159,7 @@
 
   .artist-cursor {
     position: relative;
-    top: 22vh;
+    top: 20vh;
     left: 36vw;
     width: 120px;
   }
@@ -173,7 +173,7 @@
 
   .developer-cursor {
     position: relative;
-    top: -30vh; 
+    top: -39vh; 
     left: 34vw;
     width: 120px;
   }
