@@ -5,7 +5,7 @@ import Skills from './Skills'
 function About() {
     return (
         <div className="about flex flex-col items-center p-10">
-            <section className="section container flex flex-col min-h-screen min-w-full grid grid-cols-1 md:grid-cols-3 gap-6 mt-5">
+            <section className="section container flex flex-col min-h-screen min-w-full grid grid-cols-1 lg:grid-cols-3 gap-6 mt-5">
                 <div className="container flex flex-col items-center">
                     <img className="about-avatar" src="technicallyti.png" alt="Tarika Birch" />
                     <div className='flex flex-col items-center gap-2 mt-5'>
