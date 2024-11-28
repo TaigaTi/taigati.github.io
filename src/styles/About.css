@@ -3,3 +3,8 @@
     width: 20vw;
     height: 20vw;
 }
+
+.quote-card {
+    padding:25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}

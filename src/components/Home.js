@@ -32,7 +32,7 @@ function Home() {
 
             <div className='divider p-20'></div>
 
-            <section id="tools" className="h-screen pt-6">
+            <section id="tools" className="h-[80vh] pt-6 min-w-full flex flex-col items-center">
                 <div className="container flex flex-col items-center justify-center gap-2">
                     <h1 className='text-2xl md:text-4xl'>Bringing Ideas To Life</h1>
 

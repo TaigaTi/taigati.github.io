@@ -4,8 +4,8 @@ import Skills from './Skills'
 
 function About() {
     return (
-        <div className="about flex flex-col items-center p-10">
-            <section className="section container flex flex-col min-h-screen min-w-full grid grid-cols-1 lg:grid-cols-3 gap-6 mt-5">
+        <div className="about flex flex-col items-center p-10 pt-0">
+            <section className="section container flex flex-col min-w-full grid grid-cols-1 lg:grid-cols-3 gap-6 mt-5">
                 <div className="container flex flex-col items-center my-10">
                     <img className="about-avatar" src="technicallyti.png" alt="Tarika Birch" />
                     <div className='flex flex-col items-center gap-2 mt-5'>
@@ -22,9 +22,9 @@ function About() {
                     </div>
                 </div>
 
-                <div className="container flex flex-col items-center my-10">
-                    <div className='flex flex-col gap-4 w-full'>
-                        <div className='about-card px-6 flex items-center gap-4'>
+                <div className="container flex flex-col items-center my-10 ">
+                    <div className='flex flex-col gap-4 w-full '>
+                        <div className='about-card px-6 flex items-center gap-4 min-h-[25%]'>
                             <p className='text-5xl'>📚</p>
                             <div className='text-start'>
                                 <p className='pb-1'>Bsc. Computer Science with Management</p>
@@ -63,7 +63,7 @@ function About() {
                     </div>
                 </div>
 
-                <div className="container flex flex-col items-center my-10">
+                <div className="container flex flex-col items-center my-10 min-h-full">
                     <div className='flex flex-col gap-4 w-full'>
                         <div className='about-card px-6 flex items-center gap-4 opacity-90'>
                             <img src="https://github-readme-stats-mauve-zeta.vercel.app/api?username=taigati&show_icons=true&theme=transparent&hide_border=true&title_color=f60cd7&text_color=ffffff&icon_color=f60cd7&rank_icon=github&include_all_commits=true" alt="Github" />
@@ -72,14 +72,17 @@ function About() {
                         <div className='about-card px-6 flex items-center gap-4'>
                             <img src="https://leetcode-badge-sage.vercel.app/badge/tarikabirch?theme=dark" alt="Leetcode" />
                         </div>
+
+                        <div className='px-5 about-card quote-card flex items-center justify-center gap-4'>
+                           <p className='text-sm text-center opacity-70'>Every pixel has a purpose!</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section className="section container flex flex-col items-center min-h-[80vh]">
-                <div className='w-full flex flex-col items-center'>
+            <section className="section flex flex-col items-center min-h-[80vh] w-full mt-10">
+                <p className='text-2xl md:text-4xl mb-6'>My Skills</p>
                     <Skills />
-                </div>
             </section>
         </div>
     )

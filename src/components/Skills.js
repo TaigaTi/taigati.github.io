@@ -3,7 +3,7 @@ function Skills() {
         <div className="flex gap-6 p-6 grid sm:grid-cols-1 md:grid-cols-2 w-full">
             <div className='tech-skills flex flex-col items-center'>
                 <h1 className='text-2xl pb-6'>Tech Skills</h1>
-                <div className='tech-skills-logos flex column grid grid-cols-4 gap-8'>
+                <div className='tech-skills-logos flex column grid grid-cols-4 gap-8 pb-8'>
                     <img src='assets/tech-skills/typescript.svg' alt="TypeScript" />
                     <img src='assets/tech-skills/javascript.svg' alt="JavaScript" />
                     <img src='assets/tech-skills/react.svg' alt="React" />
@@ -20,7 +20,7 @@ function Skills() {
             </div>
             <div className='design-tools flex flex-col items-center'>
                 <h1 className='text-2xl pb-6'>Design Tools</h1>
-                <div className='design-tools-logos flex column grid grid-cols-3 gap-8'>
+                <div className='design-tools-logos flex column grid grid-cols-3 gap-8 pb-8'>
                     <img src='assets/design-tools/figma.svg' alt="Figma" />
                     <img src='assets/design-tools/illustrator.png' alt="Illustrator" />
                     <img src='assets/design-tools/procreate.webp' alt="Procreate" />
