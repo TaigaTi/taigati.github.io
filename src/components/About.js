@@ -23,35 +23,35 @@ function About() {
                 <div className="container flex flex-col items-center">
                     <div className='flex flex-col gap-4'>
                         <div className='about-card px-6 flex items-center gap-4'>
-                            <p className='text-6xl mb-2'>📚</p>
+                            <p className='text-5xl'>📚</p>
                             <div className='text-start'>
-                                <p className='pb-1 text-lg'>Bsc. Computer Science with Management</p>
+                                <p className='pb-1'>Bsc. Computer Science with Management</p>
                                 <p className='opacity-80'>Expected Grad: May 2025</p>
                                 <p className='opacity-80'>GPA: 3.85</p>
                             </div>
                         </div>
 
                         <div className='about-card px-6 flex items-center gap-4'>
-                            <p className='text-6xl mb-2'>💻</p>
+                            <p className='text-5xl'>💻</p>
                             <div className='text-start'>
-                                <p className='pb-1 text-lg'>Secretary of the Computer Science Society</p>
+                                <p className='pb-1'>Secretary of the Computer Science Society</p>
                                 <p className='opacity-80'>FST, UWI Cave Hill</p>
                                 <p className='opacity-80'>Sep 2023 - Present</p>
                             </div>
                         </div>
 
                         <div className='about-card px-6 flex items-center gap-4'>
-                            <p className='text-6xl mb-2'>🏆</p>
+                            <p className='text-5xl'>🏆</p>
                             <div className='text-start'>
-                                <p className='pb-1 text-lg'>Award-Winning Artist</p>
+                                <p className='pb-1'>Award-Winning Artist</p>
                                 <p className='opacity-80'>7 years of experience</p>
                             </div>
                         </div>
 
                         <div className='about-card px-6 flex items-center gap-4'>
-                            <p className='text-6xl mb-2'>🎨</p>
+                            <p className='text-5xl mb-2'>🎨</p>
                             <div className='text-start w-full'>
-                                <p className='pb-1 text-lg'>Founder of Querencia Studios</p>
+                                <p className='pb-1'>Founder of Querencia Studios</p>
                                 <p className='opacity-80'>Art & Design Company</p>
                                 <a href="https://querenciastudios.company.site" className='opacity-80 flex justify-end'>
                                     <i className="fa-solid fa-arrow-up-right-from-square"></i>
@@ -63,22 +63,6 @@ function About() {
 
                 <div className="container flex flex-col items-center">
                     <div className='flex flex-col gap-4'>
-                        <div className='about-card px-6 flex flex-col items-center gap-4 w-full'>
-                            <h1 className='text-lg'>Relevant Coursework</h1>
-                            <div className='opacity-80 grid grid-cols-2 gap-10 text-start text-sm'>
-                                <ul className='list-disc'>
-                                    <li>Algorithms</li>
-                                    <li>Data Structures</li>
-                                    <li>Software Engineering</li>
-                                </ul>
-                                <ul className='list-disc'>
-                                    <li>UI Design</li>
-                                    <li>Principles of Marketing</li>
-                                    <li>DB Management Systems I</li>
-                                </ul>
-                            </div>
-                        </div>
-
                         <div className='about-card px-6 flex items-center gap-4 opacity-90'>
                             <img src="https://github-readme-stats.vercel.app/api?username=taigati&show_icons=true&theme=transparent&hide_border=true&title_color=f60cd7&text_color=ffffff&icon_color=f60cd7&rank_icon=github" alt="Github" />
                         </div>
