@@ -1,7 +1,7 @@
 .contact-browser {
     border: 1px solid rgba(255, 255, 255, 0.34);
     background-color: rgba(255, 255, 255, 0.121);
-    border-radius: 25px;
+    border-radius: 30px;
     height: 400px;
     width: 800px;
 }
@@ -10,18 +10,17 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.34);
 }
 
-.contact-browser-menu{
-}
-
-.contact-browser-menu ul li{
+.contact-browser-menu button{
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.082);
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #ffffff9d;
+    transition: all 0.3s ease-in-out;
 }
 
-.contact-browser-menu ul li:hover{
+.contact-browser-menu button:hover{
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.164);
     display: flex;
@@ -30,5 +29,31 @@
 }
 
 #email-button {
+    background-color: #ffffff9d;
     background-color: #971af072;
+    
+}
+
+#linkedin-button {
+    background-color: #2589dca0;
+}
+
+#github-button {
+    background-color: #ffffff1a;
+}
+
+#medium-button {
+    background-color: #ffffff1a;
+}
+
+#youtube-button {
+    background-color: #cc01015f;
+}
+
+.inactive {
+    display: none;
+}
+
+.page {
+    display: none;
 }
