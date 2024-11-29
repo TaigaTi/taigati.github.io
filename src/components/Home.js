@@ -9,7 +9,7 @@ import AwardCard from './AwardCard';
 function Home() {
     return (
         <div className='display flex flex-col items-center'>
-            <section id="intro" className="h-[90vh]">
+            <section id="intro" className="min-h-[90vh]">
                 <div className="container flex flex-col items-center justify-center gap-2">
                     <img className="avatar" src="technicallyti.png" alt="Tarika Birch" />
                     <div className="cursor-container">
@@ -32,7 +32,7 @@ function Home() {
 
             <div className='divider p-20'></div>
 
-            <section id="tools" className="h-[80vh] pt-6 min-w-full flex flex-col items-center">
+            <section id="tools" className="min-h-[80vh] pt-6 min-w-full flex flex-col items-center">
                 <div className="container flex flex-col items-center justify-center gap-2">
                     <h1 className='text-2xl md:text-4xl'>Bringing Ideas To Life</h1>
 

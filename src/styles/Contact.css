@@ -1,0 +1,34 @@
+.contact-browser {
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    background-color: rgba(255, 255, 255, 0.121);
+    border-radius: 25px;
+    height: 400px;
+    width: 800px;
+}
+
+.contact-browser-header{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.34);
+}
+
+.contact-browser-menu{
+}
+
+.contact-browser-menu ul li{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.082);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-browser-menu ul li:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.164);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#email-button {
+    background-color: #971af072;
+}
