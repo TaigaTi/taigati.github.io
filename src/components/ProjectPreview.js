@@ -6,7 +6,7 @@ function ProjectPreview({id}) {
 
     return (
         <>
-            <div className="project-preview text-start" >
+            <a className="project-preview text-start" href={project.link || project.repo} >
                 <img className="project-image" src={project.image} alt={project.title} />
                 <div className='p-6'>
                     <h1 className="text-lg mb-2">{project.title}</h1>
@@ -19,7 +19,7 @@ function ProjectPreview({id}) {
                         })}
                     </div>
                 </div>
-            </div>
+            </a>
         </>
     )
 }
