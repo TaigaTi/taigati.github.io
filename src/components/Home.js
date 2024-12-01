@@ -138,10 +138,10 @@ function Home() {
 
             </section>
 
-            <section id="Awards" className='w-full p-10 px-2 md:p-10 my-12 md:my-0'>
+            <section className='w-full p-10 px-2 md:p-10 my-12 md:my-0'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Awards</h1>
-                    <button>View All</button>
+                    <a href='/#/about/#awards'>View All</a>
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
@@ -152,10 +152,10 @@ function Home() {
 
             </section>
 
-            <section id="Certificates" className='w-full p-2 md:p-10'>
+            <section  className='w-full p-2 md:p-10'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Certificates</h1>
-                    <button>View All</button>
+                    <a href='/#/about/#certificates'>View All</a>
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>

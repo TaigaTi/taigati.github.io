@@ -25,35 +25,35 @@ const awards = [
     {
         id: 4,
         type: "award",
-        title: "Gold Award for 'Ayana' - Fine Arts Piece",
+        title: "Gold Award for 'Ayana' - Fine Arts",
         issuer: "National Independence Festival of Creative Arts",
         issued: "Nov 2019"
     },
     {
         id: 5,
         type: "award",
-        title: "Gold Award for 'Angela Lansbury' - Fine Arts Piece",
+        title: "Gold Award for 'Angela Lansbury' - Fine Arts",
         issuer: "National Independence Festival of Creative Arts",
         issued: "November 2019"
     },
     {
         id: 6,
         type: "award",
-        title: "Silver Award for 'Polar Paradise' - Fine Arts Piece",
+        title: "Silver Award for 'Polar Paradise' - Fine Arts",
         issuer: "National Independence Festival of Creative Arts",
         issued: "Nov 2019"
     },
     {
         id: 7,
         type: "award",
-        title: "Silver Award for 'Like An Hourglass' - Fine Arts Piece",
+        title: "Silver Award for 'Like An Hourglass' - Fine Arts",
         issuer: "National Independence Festival of Creative Arts",
         issued: "Nov 2024"
     },
     {
         id: 8,
         type: "award",
-        title: "Bronze Award for 'Grounded' - Fine Arts Piece",
+        title: "Bronze Award for 'Grounded' - Fine Arts",
         issuer: "National Independence Festival of Creative Arts",
         issued: "Nov 2024"
     }, 
