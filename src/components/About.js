@@ -69,7 +69,7 @@ function About() {
                 <div className="container flex flex-col items-center my-10 min-h-full">
                     <div className='flex flex-col gap-4 w-full'>
                         <div className='about-card px-6 flex items-center gap-4 opacity-90'>
-                            <img src="https://github-readme-stats-mauve-zeta.vercel.app/api?username=taigati&show_icons=true&theme=transparent&hide_border=true&title_color=f60cd7&text_color=ffffff&icon_color=f60cd7&rank_icon=github&include_all_commits=true" alt="Github" />
+                            <img src="https://github-readme-stats-mauve-zeta.vercel.app/api?username=TaigaTi&show_icons=true&theme=transparent&hide_border=true&title_color=f60cd7&text_color=ffffff&icon_color=f60cd7&rank_icon=github&include_all_commits=true" alt="Github" />
                         </div>
 
                         <div className='about-card px-6 flex items-center gap-4'>
