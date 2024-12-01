@@ -5,6 +5,7 @@ import Socials from './Socials';
 import ExperienceCard from './ExperienceCard';
 import ProjectPreview from './ProjectPreview';
 import AwardCard from './AwardCard';
+import projects from '../data/projects';
 
 function Home() {
     return (
@@ -22,7 +23,7 @@ function Home() {
 
                     <a className="text-lg resume-button rounded mt-5 px-6 py-1 flex gap-2 items-center hover:scale-105 ease-in"
                         download="Tarika_Birch-Resume.pdf" href="assets/Tarika_Birch-Resume.pdf">
-                        <i class="fa-regular fa-circle-down mr-1"></i>
+                        <i className="fa-regular fa-circle-down mr-1"></i>
                         <p>Resume</p>
                     </a>
 
@@ -129,9 +130,9 @@ function Home() {
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
-                    <ProjectPreview />
-                    <ProjectPreview />
-                    <ProjectPreview />
+                    {projects.slice(0, 3).map((project) => (
+                        <ProjectPreview key={project.id} {...project} />
+                    ))}
                 </div>
 
             </section>

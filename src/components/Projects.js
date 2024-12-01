@@ -1,5 +1,6 @@
 import ProjectPreview from "./ProjectPreview";
 import '../styles/Projects.css'
+import projects from '../data/projects'
 
 function Projects() {
     return (
@@ -13,15 +14,11 @@ function Projects() {
             </div> */}
 
             <div className="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-12 pt-5">
-                <ProjectPreview />
-                <ProjectPreview />
-                <ProjectPreview />
-                <ProjectPreview />
-                <ProjectPreview />
-                <ProjectPreview />
-                <ProjectPreview />
-                <ProjectPreview />
-                <ProjectPreview />
+                {projects.map((project) => {
+                    return (
+                        <ProjectPreview key={project.id} id={project.id} />
+                    )
+                })}
             </div>
 
 

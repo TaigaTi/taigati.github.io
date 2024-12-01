@@ -139,7 +139,7 @@ function Contact() {
             <div className='resume-button-container mt-8 mb-2 md:my-2 flex flex-col items-center gap-2'>
                 <a className="text-lg resume-button rounded mt-5 px-6 py-1 flex gap-2 items-center hover:scale-105 ease-in"
                     download="Tarika_Birch-Resume.pdf" href="assets/Tarika_Birch-Resume.pdf">
-                    <i class="fa-regular fa-circle-down mr-1"></i>
+                    <i className="fa-regular fa-circle-down mr-1"></i>
                     <p>Resume</p>
                 </a>
             </div>
