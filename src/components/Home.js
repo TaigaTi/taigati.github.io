@@ -6,6 +6,7 @@ import ExperienceCard from './ExperienceCard';
 import ProjectPreview from './ProjectPreview';
 import AwardCard from './AwardCard';
 import projects from '../data/projects';
+import awards from '../data/awards';
 
 function Home() {
     return (
@@ -126,7 +127,7 @@ function Home() {
             <section id="projects" className='w-full p-2 md:p-10'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Latest Projects</h1>
-                    <button>View All</button>
+                    <a href='/#/projects'>View All</a>
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
@@ -144,9 +145,9 @@ function Home() {
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
-                    <AwardCard type={"award"} />
-                    <AwardCard type={"award"} />
-                    <AwardCard type={"award"} />
+                    {awards.filter((award) => award.type === "award").slice(0, 3).map((award) => (
+                        <AwardCard key={award.id} {...award} />
+                    ))}
                 </div>
 
             </section>
@@ -158,9 +159,12 @@ function Home() {
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
-                    <AwardCard type={"certificate"} />
-                    <AwardCard type={"certificate"} />
-                    <AwardCard type={"certificate"} />
+                    {awards
+                        .filter((award) => award.type === "certificate")
+                        .slice(0, 3)
+                        .map((award) => (
+                            <AwardCard key={award.id} {...award} />
+                        ))}
                 </div>
 
             </section>

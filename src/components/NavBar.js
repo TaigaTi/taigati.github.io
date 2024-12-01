@@ -2,7 +2,7 @@ function NavBar() {
     const links = [
         {
             id: 1,
-            url: '/#/',
+            url: '/',
             text: 'Home'
         },
         {

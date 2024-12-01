@@ -2,7 +2,7 @@ const projects = [
     {
         id: 1,
         title: "Pellucid Web",
-        shortDescription: "The company website for Pellucid IT",
+        shortDescription: "Designed & developed the company website for Pellucid IT",
         longDescription: "Designed and developed the company website for Pellucid IT.",
         tags: ["Drupal"],
         image: "assets/projects/pellucid.png",
