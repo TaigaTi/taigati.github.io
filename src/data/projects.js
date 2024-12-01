@@ -26,7 +26,7 @@ const projects = [
         longDescription: "JobWize is a dynamic job application tracker designed to streamline the process of managing your career journey. It offers intuitive features for organization, analysis, and automation, making it easier to keep track of applications, resumes, and gain insights through user analytics.",
         tags: ["Expo", "React Native", "Firebase"],
         image: "assets/projects/jobwize.png",
-        link: "",
+        link: "https://www.figma.com/proto/omHDfhqrWlSvejzwmBXT9n/JobWize?node-id=8-41&node-type=FRAME&t=ixY3A49jXTDsM8BZ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=8%3A41",
         repo: "https://github.com/TaigaTi/JobWize",
     },
     {

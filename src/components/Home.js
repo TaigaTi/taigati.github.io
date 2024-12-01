@@ -130,7 +130,7 @@ function Home() {
                     <a href='/#/projects'>View All</a>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
                     {projects.slice(0, 3).map((project) => (
                         <ProjectPreview key={project.id} {...project} />
                     ))}
@@ -144,7 +144,7 @@ function Home() {
                     <a href='/#/about/#awards'>View All</a>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
                     {awards.filter((award) => award.type === "award").slice(0, 3).map((award) => (
                         <AwardCard key={award.id} {...award} />
                     ))}

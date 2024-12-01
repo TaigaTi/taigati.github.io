@@ -148,7 +148,7 @@ function About() {
 
             <section id="awards" className="section flex flex-col items-center w-full mt-10">
                 <p className='text-2xl md:text-4xl mb-6'>Awards</p>
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
                     {awards.filter((awards) => (awards.type === "award")).map((award) => {
                         return (
                             <AwardCard key={award.id} id={award.id} />
@@ -159,7 +159,7 @@ function About() {
 
             <section id="certificates" className="section flex flex-col items-center w-full mt-10">
                 <p className='text-2xl md:text-4xl mb-6'>Certificates</p>
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
                     {awards.filter((awards) => (awards.type === "certificate")).map((award) => {
                         return (
                             <AwardCard key={award.id} id={award.id} />
