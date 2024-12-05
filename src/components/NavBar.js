@@ -1,4 +1,11 @@
+import { Drawer } from "@mui/material"
+import { useState } from "react"
+import { Box } from '@mui/material'
+import '../styles/NavBar.css'
+
 function NavBar() {
+    const [open, setOpen] = useState(false);
+
     const links = [
         {
             id: 1,
@@ -22,8 +29,12 @@ function NavBar() {
         }
     ]
 
+    const toggleDrawer = (open) => (event) => {
+        setOpen(open)
+    };
+
     return (
-       <nav className="flex justify-between items-center p-4 mx-4">
+        <nav className="flex justify-between items-center p-4 mx-4">
             <h1>Tarika Birch</h1>
             <ul className="hidden md:flex gap-6">
                 {links.map((link) => {
@@ -36,11 +47,27 @@ function NavBar() {
             </ul>
 
             <div className="md:hidden">
-                <button>
+                <button onClick={toggleDrawer(true)}>
                     <i className="fa-solid fa-bars"></i>
                 </button>
+                <Drawer open={open} onClose={toggleDrawer(false)} anchor="right" >
+                    <Box id="drawer"
+                        className="flex flex-col gap-8 w-[250px] p-8"
+                        role="presentation"
+                        onClick={toggleDrawer(false)}
+                        onKeyDown={toggleDrawer(false)}>
+                        {links.map((link) => {
+                            return (
+                                <a key={link.id} className="text-center"
+                                    href={link.url}>
+                                    {link.text}
+                                </a>
+                            )
+                        })}
+                    </Box>
+                </Drawer>
             </div>
-       </nav>
+        </nav>
     )
 }
 
