@@ -1,6 +1,13 @@
 #drawer {
     height: 100%;
-    background-color: #1d0633;
+    background-color: #24083d;
     color: white;
 }
 
+#drawer-divider {
+    background-color: white;
+    opacity: 0.3;
+    height: 1px;
+    width: 100%;
+    margin: 20px 0px;
+}

@@ -10,22 +10,26 @@ function NavBar() {
         {
             id: 1,
             url: '/',
-            text: 'Home'
+            text: 'Home',
+            icon: 'fa-home',
         },
         {
             id: 2,
             url: '/#/about',
-            text: 'About'
+            text: 'About',
+            icon: 'fa-user',
         },
         {
             id: 3,
             url: '/#/projects',
-            text: 'Projects'
+            text: 'Projects',
+            icon: 'fa-briefcase',
         },
         {
             id: 4,
             url: '/#/contact',
-            text: 'Contact'
+            text: 'Contact',
+            icon: 'fa-envelope',
         }
     ]
 
@@ -50,20 +54,36 @@ function NavBar() {
                 <button onClick={toggleDrawer(true)}>
                     <i className="fa-solid fa-bars"></i>
                 </button>
-                <Drawer open={open} onClose={toggleDrawer(false)} anchor="right" >
+                <Drawer open={open} onClose={toggleDrawer(false)}>
                     <Box id="drawer"
-                        className="flex flex-col gap-8 w-[250px] p-8"
+                        className="flex flex-col items-center justify-between w-[300px] p-8"
                         role="presentation"
                         onClick={toggleDrawer(false)}
                         onKeyDown={toggleDrawer(false)}>
-                        {links.map((link) => {
-                            return (
-                                <a key={link.id} className="text-center"
-                                    href={link.url}>
-                                    {link.text}
-                                </a>
-                            )
-                        })}
+                        <div className="w-full">
+                            <div className="pb-6 flex flex-col items-start">
+                                <div className="flex items-center gap-4">
+                                    <img src="technicallyti.png" alt="" width={50} className="rounded-full pb-1" />
+                                    <div>
+                                        <h1 className="text-xl">Tarika Birch</h1>
+                                        <h2 className="text-sm opacity-60">Frontend Developer</h2>
+                                    </div>
+                                </div>
+                                <div id="drawer-divider"></div>
+                            </div>
+                            <div className="flex w-full flex-col gap-9 px-2">
+                                {links.map((link) => {
+                                    return (
+                                        <a key={link.id} className="flex gap-4 items-center"
+                                            href={link.url}>
+                                            <i key={link.id} className={link.icon + ' fa-solid'}></i>
+                                            {link.text}
+                                        </a>
+                                    )
+                                })}
+                            </div>
+                        </div>
+                        <img src="frontend.png" alt="" width={200} />
                     </Box>
                 </Drawer>
             </div>
