@@ -4,7 +4,7 @@ import projects from '../data/projects'
 
 function Projects() {
     return (
-        <div className="projects flex flex-col items-center sm:p-10 min-h-[90vh]">
+        <div className="projects flex flex-col items-center pb-10 sm:p-10 min-h-[100vh]">
             <h1 className="text-3xl md:text-4xl pt-10">Projects</h1>
 
             {/* <div className="px-10 w-full flex justify-center">
