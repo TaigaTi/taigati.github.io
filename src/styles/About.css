@@ -8,3 +8,16 @@
     padding:25px;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
+
+@media screen and (max-width: 600px) {
+    .about-avatar {
+        border-radius: 100%;
+        width: 30vw;
+        height: 30vw;
+    }
+
+    #about-frontend {
+       width: 200px;
+    }
+    
+}

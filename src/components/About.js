@@ -12,8 +12,8 @@ function About() {
                 <div className="container flex flex-col items-center my-10">
                     <img className="about-avatar" src="technicallyti.png" alt="Tarika Birch" />
                     <div className='flex flex-col items-center gap-2 mt-5'>
-                        <h1 className='text-5xl md:text-6xl mb-1'>Tarika Birch</h1>
-                        <img className="frontend" src="frontend.png" alt="Frontend Developer" />
+                        <h1 className='text-2xl md:text-6xl mb-1'>Tarika Birch</h1>
+                        <img id="about-frontend" className="frontend" src="frontend.png" alt="Frontend Developer" />
                         <a className="text-lg resume-button rounded mt-5 px-6 py-1 flex gap-2 items-center hover:scale-105 ease-in"
                             download="Tarika_Birch-Resume.pdf" href="assets/Tarika_Birch-Resume.pdf">
                             <i className="fa-regular fa-circle-down mr-1"></i>
