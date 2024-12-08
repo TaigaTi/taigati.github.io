@@ -95,7 +95,7 @@ function Home() {
                         />
 
                         <ExperienceCard
-                            title="Software Developer"
+                            title="Software Developer Intern"
                             company="Pellucid IT"
                             startDate="Jan 2024"
                             endDate="Jul 2024"
