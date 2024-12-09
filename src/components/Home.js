@@ -7,6 +7,7 @@ import ProjectPreview from './ProjectPreview';
 import AwardCard from './AwardCard';
 import projects from '../data/projects';
 import awards from '../data/awards';
+import { HashLink } from 'react-router-hash-link';
 
 function Home() {
     return (
@@ -141,7 +142,7 @@ function Home() {
             <section className='w-full p-10 px-2 md:p-10 my-12 md:my-0'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Awards</h1>
-                    <a href='/#/about/#awards'>View All</a>
+                    <HashLink to="/about/#awards">View All</HashLink>
                 </div>
 
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
@@ -155,7 +156,7 @@ function Home() {
             <section  className='w-full p-2 md:p-10'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Certificates</h1>
-                    <a href='/#/about/#certificates'>View All</a>
+                    <HashLink to="/about/#certificates">View All</HashLink>
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
