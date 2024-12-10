@@ -27,12 +27,19 @@
   border-radius: 50%;
 }
 
-.cursor-container {
+#cursor-container-landing {
   position: absolute;
   top: 25vh;
   left: 25vw;
   height: 25vh;
   width: 50vw;
+}
+
+#cursor-container-footer {
+  position: relative;
+  top: -60vh;
+  left: 20vw;
+  width: 100vw;
 }
 
 .artist-cursor {
@@ -89,6 +96,21 @@
   }
 }
 
+#cursor-container-footer .artist-cursor {
+  top: 28vh;
+  left: 50vw;
+}
+
+#cursor-container-footer .designer-cursor {
+  top: 0vh;
+  left: -4vw;
+}
+
+#cursor-container-footer .developer-cursor {
+  top: -50vh;
+  left: 30vw;
+}
+
 .frontend {
   width: 300px;
 }
@@ -124,21 +146,18 @@
   }
 
   .artist-cursor {
-    position: relative;
     top: 19vh;
     left: 36vw;
     width: 120px;
   }
 
   .designer-cursor {
-    position: relative;
     top: -5vh;
     left: -21vw;
     width: 120px;
   }
 
   .developer-cursor {
-    position: relative;
     top: -32vh;
     left: 35vw;
     width: 120px;
@@ -158,21 +177,18 @@
   }
 
   .artist-cursor {
-    position: relative;
     top: 20vh;
     left: 36vw;
     width: 120px;
   }
 
   .designer-cursor {
-    position: relative;
     top: -5vh;
     left: -2vw;
     width: 120px;
   }
 
   .developer-cursor {
-    position: relative;
     top: -39vh; 
     left: 34vw;
     width: 120px;
@@ -183,23 +199,21 @@
 
 @media screen and (min-width: 1800px) {
   .artist-cursor {
-    position: relative;
     top: 28vh;
     left: 34vw;
     width: 150px;
   }
 
   .designer-cursor {
-    position: relative;
     top: -5vh;
     left: 8vw;
     width: 150px;
   }
 
   .developer-cursor {
-    position: relative;
     top: -48vh;
     left: 32vw;
     width: 150px;
   }
 }
+

@@ -15,7 +15,7 @@ function Home() {
             <section id="intro" className="min-h-[90vh]">
                 <div className="container flex flex-col items-center justify-center gap-2">
                     <img className="avatar" src="technicallyti.png" alt="Tarika Birch" />
-                    <div className="cursor-container">
+                    <div id="cursor-container-landing">
                         <img className="artist-cursor" src="assets/cursors/artist-cursor.png" alt="Tarika Birch" />
                         <img className="designer-cursor" src="assets/cursors/designer-cursor.png" alt="Tarika Birch" />
                         <img className="developer-cursor" src="assets/cursors/developer-cursor.png" alt="Tarika Birch" />
@@ -153,7 +153,7 @@ function Home() {
 
             </section>
 
-            <section  className='w-full p-2 md:p-10'>
+            <section className='w-full p-2 md:p-10'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Certificates</h1>
                     <HashLink to="/about/#certificates">View All</HashLink>
@@ -171,9 +171,13 @@ function Home() {
             </section>
 
             <section className='h-screen p-10'>
-
                 <div className='h-full flex justify-center items-center'>
                     <img src="frontend.png" alt='Frontend Developer' width={800} />
+                </div>
+                <div id="cursor-container-footer">
+                    <img className="artist-cursor" src="assets/cursors/artist-cursor.png" alt="Tarika Birch" />
+                    <img className="designer-cursor" src="assets/cursors/designer-cursor.png" alt="Tarika Birch" />
+                    <img className="developer-cursor" src="assets/cursors/developer-cursor.png" alt="Tarika Birch" />
                 </div>
             </section>
 
