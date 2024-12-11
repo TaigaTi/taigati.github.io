@@ -96,14 +96,21 @@
   }
 }
 
+#cursor-container-footer {
+  position: relative;
+  top: -60vh;
+  left: 0vw;
+  width: 100%;
+}
+
 #cursor-container-footer .artist-cursor {
-  top: 28vh;
-  left: 50vw;
+  top: 25vh;
+  left: 46vw;
 }
 
 #cursor-container-footer .designer-cursor {
   top: 0vh;
-  left: -4vw;
+  left: -10vw;
 }
 
 #cursor-container-footer .developer-cursor {

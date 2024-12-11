@@ -8,6 +8,10 @@ import AwardCard from './AwardCard';
 import projects from '../data/projects';
 import awards from '../data/awards';
 import { HashLink } from 'react-router-hash-link';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 function Home() {
     return (
@@ -85,7 +89,11 @@ function Home() {
                 <div id="experience-jobs" className='mt-10 md:mt-0'>
                     <h1 className="text-2xl">Experience</h1>
 
-                    <div className="experience-container flex flex-col gap-4 mt-4 p-2">
+                    <div data-aos="fade-up"
+                        data-aos-duration="700"
+                        data-aos-once="true"
+                        data-aos-easing="ease-in-out"
+                        className="experience-container flex flex-col gap-4 mt-4 p-2">
                         <ExperienceCard
                             title="Software Developer"
                             company="Pellucid IT"
@@ -167,17 +175,28 @@ function Home() {
                             <AwardCard key={award.id} {...award} />
                         ))}
                 </div>
-
             </section>
 
             <section className='h-screen p-10'>
-                <div className='h-full flex justify-center items-center'>
+                <div
+                    data-aos="zoom-in"
+                    data-aos-duration="800"
+                    data-aos-delay="50"
+                    data-aos-once="true"
+                    data-aos-easing="ease-in-out"
+                    className='h-full flex justify-center items-center'>
                     <img src="frontend.png" alt='Frontend Developer' width={800} />
                 </div>
-                <div id="cursor-container-footer">
-                    <img className="artist-cursor" src="assets/cursors/artist-cursor.png" alt="Tarika Birch" />
-                    <img className="designer-cursor" src="assets/cursors/designer-cursor.png" alt="Tarika Birch" />
-                    <img className="developer-cursor" src="assets/cursors/developer-cursor.png" alt="Tarika Birch" />
+                <div
+                    id="cursor-container-footer"
+                    data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-delay="800"
+                    data-aos-once="true"
+                    data-aos-easing="ease-in-out">
+                        <img className="artist-cursor" src="assets/cursors/artist-cursor.png" alt="Tarika Birch" />
+                        <img className="designer-cursor" src="assets/cursors/designer-cursor.png" alt="Tarika Birch" />
+                        <img className="developer-cursor" src="assets/cursors/developer-cursor.png" alt="Tarika Birch" />
                 </div>
             </section>
 
