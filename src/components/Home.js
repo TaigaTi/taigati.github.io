@@ -8,10 +8,6 @@ import AwardCard from './AwardCard';
 import projects from '../data/projects';
 import awards from '../data/awards';
 import { HashLink } from 'react-router-hash-link';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-AOS.init();
 
 function Home() {
     return (

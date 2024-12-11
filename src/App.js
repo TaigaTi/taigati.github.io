@@ -6,6 +6,10 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Error from './components/Error';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 function App() {
   return (
