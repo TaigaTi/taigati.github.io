@@ -53,7 +53,10 @@ function Home() {
                     <div className="flex flex-col items-center justify-center gap-2">
                         <p className='md:text-lg p-2 pt-1 md:p-6 md:pt-1'>Frontend developer who enjoys crafting user-friendly experiences</p>
 
-                        <div className='flex flex-col md:flex-row gap-4 grid sm:grid-cols-2 md:grid-cols-2'>
+                        <div className='flex flex-col md:flex-row gap-4 grid sm:grid-cols-2 md:grid-cols-2'
+                            data-aos="zoom-out"
+                            data-aos-duration="800"
+                            data-aos-easing="ease-in-out">
                             <div className='about-card px-6'>
                                 <p className='text-6xl mb-2'>📚</p>
                                 <p className='pb-2 text-lg'>Bsc. Computer Science with Management</p>
@@ -181,7 +184,7 @@ function Home() {
                 <div
                     data-aos="zoom-in"
                     data-aos-duration="800"
-                    data-aos-delay="50"
+                    data-aos-delay="200"
                     data-aos-once="true"
                     data-aos-easing="ease-in-out"
                     className='h-full flex justify-center items-center'>
@@ -191,12 +194,12 @@ function Home() {
                     id="cursor-container-footer"
                     data-aos="zoom-in"
                     data-aos-duration="1000"
-                    data-aos-delay="800"
+                    data-aos-delay="900"
                     data-aos-once="true"
                     data-aos-easing="ease-in-out">
-                        <img className="artist-cursor" src="assets/cursors/artist-cursor.png" alt="Tarika Birch" />
-                        <img className="designer-cursor" src="assets/cursors/designer-cursor.png" alt="Tarika Birch" />
-                        <img className="developer-cursor" src="assets/cursors/developer-cursor.png" alt="Tarika Birch" />
+                    <img className="artist-cursor" src="assets/cursors/artist-cursor.png" alt="Tarika Birch" />
+                    <img className="designer-cursor" src="assets/cursors/designer-cursor.png" alt="Tarika Birch" />
+                    <img className="developer-cursor" src="assets/cursors/developer-cursor.png" alt="Tarika Birch" />
                 </div>
             </section>
 
