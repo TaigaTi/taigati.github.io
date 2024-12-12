@@ -16,9 +16,9 @@ function Home() {
                 <div className="container flex flex-col items-center justify-center gap-2">
                     <img className="avatar" src="technicallyti.png" alt="Tarika Birch" />
                     <div id="cursor-container-landing">
-                        <img className="artist-cursor" src="assets/cursors/artist-cursor.png" alt="Tarika Birch" />
-                        <img className="designer-cursor" src="assets/cursors/designer-cursor.png" alt="Tarika Birch" />
                         <img className="developer-cursor" src="assets/cursors/developer-cursor.png" alt="Tarika Birch" />
+                        <img className="designer-cursor" src="assets/cursors/designer-cursor.png" alt="Tarika Birch" />
+                        <img className="artist-cursor" src="assets/cursors/artist-cursor.png" alt="Tarika Birch" />
                     </div>
                     <h1 className='text-5xl md:text-6xl mb-1'>Tarika Birch</h1>
                     <img className="frontend" src="frontend.png" alt="Frontend Developer" />
@@ -176,7 +176,7 @@ function Home() {
                 </div>
             </section>
 
-            <section className='h-screen p-10'>
+            <section className='h-[40vh] md:h-screen p-10'>
                 <div
                     data-aos="zoom-in"
                     data-aos-duration="800"
@@ -184,18 +184,7 @@ function Home() {
                     data-aos-once="true"
                     data-aos-easing="ease-in-out"
                     className='h-full flex justify-center items-center'>
-                    <img src="frontend.png" alt='Frontend Developer' width={800} />
-                </div>
-                <div
-                    id="cursor-container-footer"
-                    data-aos="zoom-in"
-                    data-aos-duration="1000"
-                    data-aos-delay="900"
-                    data-aos-once="true"
-                    data-aos-easing="ease-in-out">
-                    <img className="artist-cursor" src="assets/cursors/artist-cursor.png" alt="Tarika Birch" />
-                    <img className="designer-cursor" src="assets/cursors/designer-cursor.png" alt="Tarika Birch" />
-                    <img className="developer-cursor" src="assets/cursors/developer-cursor.png" alt="Tarika Birch" />
+                    <img src="frontend.png" alt='Frontend Developer' className='frontend-footer' />
                 </div>
             </section>
 

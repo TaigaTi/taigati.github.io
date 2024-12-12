@@ -29,23 +29,16 @@
 
 #cursor-container-landing {
   position: absolute;
-  top: 25vh;
-  left: 25vw;
-  height: 25vh;
-  width: 50vw;
-}
-
-#cursor-container-footer {
-  position: relative;
-  top: -60vh;
-  left: 20vw;
-  width: 100vw;
+  top: 12vh;
+  height: 50vh;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .artist-cursor {
   position: relative;
-  top: 18vh;
-  left: 35vw;
+  top: 2%;
+  left: 58%;
   width: 130px;
   animation: artist-cursor 5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 }
@@ -62,8 +55,8 @@
 
 .designer-cursor {
   position: relative;
-  top: -3vh;
-  left: 8vw;
+  top: 5%;
+  left: 34%;
   width: 130px;
   animation: designer-cursor 5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
 }
@@ -73,15 +66,14 @@
     transform: translate(2%, 2%) rotate(360deg) translateX(8px) rotate(-360deg);
   }
   100% {
-    transform: translate(2%, 2%) rotate(0deg) translateX(8px)
-      rotate(0deg);
+    transform: translate(2%, 2%) rotate(0deg) translateX(8px) rotate(0deg);
   }
 }
 
 .developer-cursor {
   position: relative;
-  top: -42vh;
-  left: 30vw;
+  top: 0%;
+  left: 55%;
   width: 130px;
   animation: developer-cursor 5.8s cubic-bezier(0.32, 0, 0.8, 1) infinite;
 }
@@ -96,30 +88,12 @@
   }
 }
 
-#cursor-container-footer {
-  position: relative;
-  top: -60vh;
-  left: 0vw;
-  width: 100%;
-}
-
-#cursor-container-footer .artist-cursor {
-  top: 25vh;
-  left: 46vw;
-}
-
-#cursor-container-footer .designer-cursor {
-  top: 0vh;
-  left: -10vw;
-}
-
-#cursor-container-footer .developer-cursor {
-  top: -45vh;
-  left: 30vw;
-}
-
 .frontend {
   width: 300px;
+}
+
+.frontend-footer {
+  width: 60vw;
 }
 
 .about-card {
@@ -153,28 +127,35 @@
   }
 
   .artist-cursor {
-    top: 19vh;
-    left: 36vw;
+    top: -22%;
+    left: 60%;
     width: 120px;
   }
 
   .designer-cursor {
-    top: -5vh;
-    left: -21vw;
+    top: -10%;
+    left: 5%;
     width: 120px;
   }
 
   .developer-cursor {
-    top: -32vh;
-    left: 35vw;
+    top: -15%;
+    left: 55%;
     width: 120px;
   }
 
   .frontend {
     width: 250px;
   }
-}
 
+  #cursor-container-landing {
+    position: absolute;
+    top: 25vh;
+    height: 30vh;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
 
 @media screen and (min-width: 600px) and (max-width: 1200px) {
   .avatar {
@@ -182,45 +163,50 @@
     height: 40vw;
     margin-bottom: 15px;
   }
-
+  
   .artist-cursor {
-    top: 20vh;
-    left: 36vw;
+    top: 0%;
+    left: 60%;
     width: 120px;
   }
 
   .designer-cursor {
-    top: -5vh;
-    left: -2vw;
+    top: 00%;
+    left: 22%;
     width: 120px;
   }
 
   .developer-cursor {
-    top: -39vh; 
-    left: 34vw;
+    top: 0%;
+    left: 60%;
     width: 120px;
   }
 
+  #cursor-container-landing {
+    position: absolute;
+    top: 25vh;
+    height: 30vh;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
-
 
 @media screen and (min-width: 1800px) {
   .artist-cursor {
-    top: 28vh;
-    left: 34vw;
+    top: 20%;
+    left: 58%;
     width: 150px;
   }
 
   .designer-cursor {
-    top: -5vh;
-    left: 8vw;
+    top: 10%;
+    left: 34%;
     width: 150px;
   }
 
   .developer-cursor {
-    top: -48vh;
-    left: 32vw;
+    top: 0%;
+    left: 56%;
     width: 150px;
   }
 }
-
