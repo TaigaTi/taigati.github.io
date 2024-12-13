@@ -29,7 +29,7 @@
 
 #cursor-container-landing {
   position: absolute;
-  top: 12vh;
+  top: 20vh;
   height: 50vh;
   width: 100%;
   box-sizing: border-box;
@@ -37,7 +37,7 @@
 
 .artist-cursor {
   position: relative;
-  top: 2%;
+  top: -10%;
   left: 58%;
   width: 130px;
   animation: artist-cursor 5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
@@ -55,7 +55,7 @@
 
 .designer-cursor {
   position: relative;
-  top: 5%;
+  top: 0%;
   left: 34%;
   width: 130px;
   animation: designer-cursor 5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
@@ -72,7 +72,7 @@
 
 .developer-cursor {
   position: relative;
-  top: 0%;
+  top: -10%;
   left: 55%;
   width: 130px;
   animation: developer-cursor 5.8s cubic-bezier(0.32, 0, 0.8, 1) infinite;
@@ -127,19 +127,19 @@
   }
 
   .artist-cursor {
-    top: -22%;
-    left: 60%;
+    top: -30%;
+    left: 65%;
     width: 120px;
   }
 
   .designer-cursor {
-    top: -10%;
+    top: -5%;
     left: 5%;
     width: 120px;
   }
 
   .developer-cursor {
-    top: -15%;
+    top: -5%;
     left: 55%;
     width: 120px;
   }
@@ -150,7 +150,7 @@
 
   #cursor-container-landing {
     position: absolute;
-    top: 25vh;
+    top: 20vh;
     height: 30vh;
     width: 100%;
     box-sizing: border-box;
@@ -165,26 +165,26 @@
   }
   
   .artist-cursor {
-    top: 0%;
+    top: -30%;
     left: 60%;
     width: 120px;
   }
 
   .designer-cursor {
-    top: 00%;
+    top:-5%;
     left: 22%;
     width: 120px;
   }
 
   .developer-cursor {
-    top: 0%;
+    top: -10%;
     left: 60%;
     width: 120px;
   }
 
   #cursor-container-landing {
     position: absolute;
-    top: 25vh;
+    top: 22vh;
     height: 30vh;
     width: 100%;
     box-sizing: border-box;
@@ -193,20 +193,28 @@
 
 @media screen and (min-width: 1800px) {
   .artist-cursor {
-    top: 20%;
+    top: 0%;
     left: 58%;
     width: 150px;
   }
 
   .designer-cursor {
-    top: 10%;
+    top: -5%;
     left: 34%;
     width: 150px;
   }
 
   .developer-cursor {
-    top: 0%;
+    top: -20%;
     left: 56%;
     width: 150px;
+  }
+
+  #cursor-container-landing {
+    position: absolute;
+    top: 22vh;
+    height: 30vh;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
