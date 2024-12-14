@@ -7,9 +7,9 @@ import awards from '../data/awards'
 
 function About() {
     return (
-        <div className="about flex flex-col items-center py-5 md:p-10 pt-0">
-            <section className="section container flex flex-col min-w-full grid grid-cols-1 lg:grid-cols-3 gap-6 mt-5">
-                <div className="container flex flex-col items-center my-10">
+        <div className="about flex flex-col items-center md:px-10 mt-[-10px]">
+            <section className="section container flex flex-col min-w-full grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div className="container flex flex-col items-center my-10 py-5">
                     <img className="about-avatar" src="technicallyti.png" alt="Tarika Birch" />
                     <div className='flex flex-col items-center gap-2 mt-5'>
                         <h1 className='text-2xl md:text-6xl mb-1'>Tarika Birch</h1>
@@ -26,7 +26,7 @@ function About() {
                 </div>
 
                 <div className="container flex flex-col items-center my-10 p-5">
-                    <div className='flex flex-col gap-4 w-full '>
+                    <div className='flex flex-col gap-4 w-full'>
                         <div className='about-card px-6 flex items-center gap-4 min-h-[25%]'>
                             <p className='text-5xl'>📚</p>
                             <div className='text-start'>
@@ -66,13 +66,13 @@ function About() {
                     </div>
                 </div>
 
-                <div className="container flex flex-col items-center my-10 min-h-full p-5">
-                    <div className='flex flex-col gap-4 w-full'>
-                        <div className='about-card px-6 flex items-center gap-4 opacity-90'>
+                <div className="container flex flex-col items-center my-10 p-5">
+                    <div className='flex flex-col gap-4 w-full h-full'>
+                        <div className='about-card px-6 flex items-center gap-4 opacity-90 h-full'>
                             <img src="https://github-readme-stats-mauve-zeta.vercel.app/api?username=TaigaTi&show_icons=true&theme=transparent&hide_border=true&title_color=f60cd7&text_color=ffffff&icon_color=f60cd7&rank_icon=github&include_all_commits=true" alt="Github" />
                         </div>
 
-                        <div className='about-card px-6 flex items-center gap-4'>
+                        <div className='about-card px-6 flex items-center gap-4 h-full'>
                             <img src="https://leetcode-badge-sage.vercel.app/badge/tarikabirch?theme=dark" alt="Leetcode" />
                         </div>
 
@@ -89,8 +89,13 @@ function About() {
             </section>
 
             <section id="experience" className="my-10 py-10 p-5">
-                <div id="experience-jobs" className='mt-10 md:mt-0'>
-
+                <div id="experience-jobs"
+                    className='mt-10 md:mt-0'
+                    data-aos="fade-up"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="true"
+                    data-aos-delay="500"
+                    data-aos-duration="1000">
                     <h1 className="text-2xl">Education</h1>
 
                     <div className="experience-container flex flex-col gap-4 mt-4 p-2 pb-10">
@@ -146,8 +151,8 @@ function About() {
                 </div>
             </section>
 
-            <section id="awards" className="section flex flex-col items-center w-full mt-10 p-5">
-                <p className='text-2xl md:text-4xl mb-6'>Awards</p>
+            <section id="awards" className="section flex flex-col items-center w-full my-10 p-5">
+                <p className='text-2xl md:text-4xl'>Awards</p>
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-4 p-2 md:p-6'>
                     {awards.filter((awards) => (awards.type === "award")).map((award) => {
                         return (
@@ -157,8 +162,8 @@ function About() {
                 </div>
             </section>
 
-            <section id="certificates" className="section flex flex-col items-center w-full mt-10 p-5">
-                <p className='text-2xl md:text-4xl mb-6'>Certificates</p>
+            <section id="certificates" className="section flex flex-col items-center w-full my-10 p-5">
+                <p className='text-2xl md:text-4xl'>Certificates</p>
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-4 p-2 md:p-6 w-full'>
                     {awards.filter((awards) => (awards.type === "certificate")).map((award) => {
                         return (
