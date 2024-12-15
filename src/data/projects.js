@@ -44,7 +44,7 @@ const projects = [
         title: "Simon Says",
         shortDescription: "A simple game of memory and pattern recognition",
         longDescription: "A simple game of memory and pattern recognition. The game features a series of buttons that the user must remember and repeat in the correct order.",
-        tags: ["HTML", "CSS", "JavaScript"],
+        tags: ["React", "HTML", "CSS", "JavaScript"],
         image: "assets/projects/simon-says.png",
         link: "https://taigati.github.io/Simon-Says/",
         repo: "https://github.com/TaigaTi/Simon-Says",
@@ -78,6 +78,15 @@ const projects = [
         image: "assets/projects/equity-care.png",
         link: "https://taigati.github.io/Equity-Care/",
         repo: "https://github.com/TaigaTi/Equity-Care",
+    }, {
+        id: 9,
+        title: "Tic Tac Toe",
+        shortDescription: "A simple game of tic-tac-toe",
+        longDescription: "A simple game of tic-tac-toe. The game features a grid of buttons that the user can click to place their symbol (X or O) in a row, column, or diagonal to win the game.",
+        tags: ["React", "HTML", "CSS", "JavaScript"],
+        image: "assets/projects/tictactoe.png",
+        link: "https://tictactoe-2.onrender.com",
+        repo: "https://github.com/TaigaTi/TicTacToe-2",
     },
 
 ];
