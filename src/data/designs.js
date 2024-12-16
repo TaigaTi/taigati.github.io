@@ -61,7 +61,7 @@ const designs = [
         cardImage: "assets/designs/tdp/tdp.png",
         images: ["assets/designs/tdp/tdp.png", ""],
         prototype: "",
-        tags: ["Canva", "Photoshop"],
+        tags: ["Canva", "Photoshop", "Illustrator"],
     },  {
         id: 8,
         title: "Academic Link-Edu",
