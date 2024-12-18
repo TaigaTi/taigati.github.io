@@ -6,7 +6,7 @@ function DesignCard({ id }) {
 
     return (
         <>
-            <a className="design-card container text-start" href='/#/designs/1' >
+            <a className="design-card container text-start" href={`/#/designs/${design.id}`} >
                 <img className="design-image h-1/2" src={design.cardImage} alt={design.title} />
                 <div className='design-info h-1/2 container p-6 pt-4 pb-8 flex flex-col justify-evenly'>
                     <div className="design-text pb-1">
