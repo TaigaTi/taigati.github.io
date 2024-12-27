@@ -2,7 +2,6 @@ import '../styles/AwardCard.css'
 import awards from '../data/awards'
 
 function AwardCard({id}) {
-    console.log(id)
      const award = awards.find(award => award.id === id)
      const type = award.type
 
