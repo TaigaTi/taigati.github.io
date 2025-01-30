@@ -12,7 +12,7 @@
 
 .resume-button {
   border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.129);
+  background-color: rgba(255, 255, 255, 0.103);
   color: white;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .about-card {
-  background-color: rgba(255, 255, 255, 0.047);
+  background-color: #4d2f6939;
   border-radius: 25px;
   padding: 30px;
 }
@@ -106,7 +106,7 @@
 .design-tools {
   padding: 30px;
   border-radius: 25px;
-  background-color: rgba(255, 255, 255, 0.047);
+  background-color: #4d2f6939;
 }
 
 .tech-skills-logos img {

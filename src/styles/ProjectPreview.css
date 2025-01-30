@@ -1,11 +1,11 @@
 .project-preview {
     border-radius: 25px;
     min-height: 100px;
-    background-color: rgba(255, 255, 255, 0.052);
+    background-color: #4d2f6949;
 }
 
 .project-preview:hover {
-    background-color: rgba(255, 255, 255, 0.13);
+    background-color: #5b3d7a6c;
     transform: scale(1.01);
     transition: all 0.2s ease-in-out;
 }
@@ -19,7 +19,7 @@
 
 .project-tags p {
     border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0.077);
+    background-color: #4d2f695d;
     padding: 5px 12px;
     font-size: 12px;
     font-weight: 600;

@@ -47,7 +47,7 @@ function Home() {
                 <div className="container">
                     <h1 className='text-2xl md:text-4xl'>Who Am I?</h1>
                     <div className="flex flex-col items-center justify-center gap-2">
-                        <p className='md:text-lg p-2 pt-1 md:p-6 md:pt-1'>Frontend developer who enjoys crafting user-friendly experiences</p>
+                        <p className='md:text-lg p-2 pt-1 md:p-6 md:pt-1 opacity-80'>Frontend developer who enjoys crafting user-friendly experiences</p>
 
                         <div className='flex flex-col md:flex-row gap-4 grid sm:grid-cols-2 md:grid-cols-2'
                             data-aos="zoom-out"
