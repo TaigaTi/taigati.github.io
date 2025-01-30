@@ -1,20 +1,12 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background: linear-gradient(150deg, #010117, #120123, #260332, #10011f);
 }
 
 .App {
-  background: linear-gradient(
-    150deg,
-    #050542,
-    #21043e,
-    #3c074e,
-    #21043e,
-    #050542,
-    #21043e,
-    #3c074e
-  );
   text-align: center;
   color: white;
   min-height: 100vh;
@@ -54,4 +46,3 @@ html, body {
     transform: rotate(360deg);
   }
 }
-
