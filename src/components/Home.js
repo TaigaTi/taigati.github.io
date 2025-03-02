@@ -57,20 +57,20 @@ function Home() {
                                 <p className='text-6xl mb-2'>📚</p>
                                 <p className='pb-2 text-lg'>Bsc. Computer Science with Management</p>
                                 <p className='opacity-80'>Expected Grad: May 2025</p>
-                                <p className='opacity-80'>GPA: 3.85</p>
+                                <p className='opacity-80'>GPA: 3.88</p>
                             </div>
 
                             <div className='about-card px-6'>
                                 <p className='text-6xl mb-2'>💻</p>
-                                <p className='pb-2 text-lg'>Secretary of the Computer Science Society</p>
+                                <p className='pb-2 text-lg'>Vice President of the Computer Science Society</p>
                                 <p className='opacity-80'>FST, UWI Cave Hill</p>
-                                <p className='opacity-80'>Sep 2023 - Present</p>
+                                <p className='opacity-80'>Jan 2025 - Present</p>
                             </div>
 
                             <div className='about-card px-6'>
                                 <p className='text-6xl mb-2'>🏆</p>
                                 <p className='pb-2 text-lg px-8'>Award-Winning Artist</p>
-                                <p className='opacity-80'>7 years of experience</p>
+                                <p className='opacity-80'>8 years of experience</p>
                             </div>
 
                             <div className='about-card px-6'>
