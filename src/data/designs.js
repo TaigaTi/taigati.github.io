@@ -4,10 +4,10 @@ const designs = [
         title: "JobWize",
         shortDescription: "A dynamic job application tracker designed to streamline career journey management",
         longDescription: [
-            "JobWize is a dynamic job application tracker designed to streamline career journey management."],
+            "A dynamic job application tracker designed to streamline career journey management."],
         cardImage: "assets/designs/jobwize/jobwize.png",
         headerImage: "assets/designs/jobwize/jobwize-header.png",
-        images: ["assets/designs/jobwize/jobwize.png", "assets/designs/jobwize/jobwize-header.png"],
+        images: ["assets/designs/jobwize/jobwize.png", "assets/designs/jobwize/jobwize-header.png", "assets/designs/pellucid/pellucid.png", "assets/designs/pellucid/pellucid.png"],
         prototype: "",
         tags: ["Figma", "Mobile Design",],
     }, {
