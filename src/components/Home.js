@@ -114,7 +114,7 @@ function Home() {
             <section id="projects" className='w-full p-2 md:p-10'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Latest Projects</h1>
-                    <a href='/#/projects'>View All</a>
+                    <a href='/#/projects' className='hover:text-purple-300 ease-in duration-200'>View All</a>
                 </div>
 
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
@@ -128,7 +128,7 @@ function Home() {
             <section className='w-full p-10 px-2 md:p-10 my-12 md:my-0'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Awards</h1>
-                    <HashLink to="/about/#awards">View All</HashLink>
+                    <HashLink to="/about/#awards" className='hover:text-purple-300 ease-in duration-200'>View All</HashLink>
                 </div>
 
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
@@ -142,7 +142,7 @@ function Home() {
             <section className='w-full p-2 md:p-10'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Certificates</h1>
-                    <HashLink to="/about/#certificates">View All</HashLink>
+                    <HashLink to="/about/#certificates" className='hover:text-purple-300 ease-in duration-200'>View All</HashLink>
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
