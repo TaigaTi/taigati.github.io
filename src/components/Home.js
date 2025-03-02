@@ -8,6 +8,7 @@ import AwardCard from './AwardCard';
 import projects from '../data/projects';
 import awards from '../data/awards';
 import { HashLink } from 'react-router-hash-link';
+import experience from '../data/experience';
 
 function Home() {
     return (
@@ -93,41 +94,19 @@ function Home() {
                         data-aos-once="true"
                         data-aos-easing="ease-in-out"
                         className="experience-container flex flex-col gap-4 mt-4 p-2">
-                        <ExperienceCard
-                            title="Software Developer"
-                            company="Pellucid IT"
-                            startDate="Jul 2024"
-                            endDate="Present"
-                            location="Remote"
-                            logo="assets/logos/pellucid.png"
-                        />
-
-                        <ExperienceCard
-                            title="Software Developer Intern"
-                            company="Pellucid IT"
-                            startDate="Jan 2024"
-                            endDate="Jul 2024"
-                            location="Remote"
-                            logo="assets/logos/pellucid.png"
-                        />
-
-                        <ExperienceCard
-                            title="Judiciary Software Engineer"
-                            company="National Center for State Courts"
-                            startDate="Jul 2023"
-                            endDate="Aug 2023"
-                            location="Remote"
-                            logo="assets/logos/ncsc.jpg"
-                        />
-
-                        <ExperienceCard
-                            title="Digital Transformation Intern"
-                            company="Central Bank of Barbados"
-                            startDate="Jun 2023"
-                            endDate="Jul 2023"
-                            location="Barbados"
-                            logo="assets/logos/cbb.png"
-                        />
+                          {experience.map((experience) => {
+                            return (
+                                <ExperienceCard
+                                    key={experience.id}
+                                    title={experience.title}
+                                    company={experience.company}
+                                    startDate={experience.startDate}
+                                    endDate={experience.endDate}
+                                    location={experience.location}
+                                    logo={experience.logo}
+                                />
+                            )
+                        })}
                     </div>
                 </div>
             </section>
