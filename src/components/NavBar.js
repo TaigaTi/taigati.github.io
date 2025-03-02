@@ -3,8 +3,20 @@ import { useState } from "react"
 import { Box } from '@mui/material'
 import '../styles/NavBar.css'
 
-function NavBar() {
-    const [open, setOpen] = useState(false);
+function NavBar(path) {
+    const [open, setOpen] = useState(false)
+
+    function checkActiveLink(linkUrl) {
+        linkUrl = linkUrl.split("/#")
+
+        if (linkUrl.length > 1) {
+            linkUrl = linkUrl[1]
+        } else {
+            linkUrl = linkUrl[0]
+        }
+
+        return path['path'] === linkUrl
+    }
 
     const links = [
         {
@@ -43,7 +55,7 @@ function NavBar() {
             <ul className="hidden md:flex gap-6">
                 {links.map((link) => {
                     return (
-                        <li key={link.id} className="w-[80px]">
+                        <li key={link.id} className={checkActiveLink(link.url) ? 'active w-[80px]' : 'w-[80px]'}>
                             <a href={link.url}>{link.text}</a>
                         </li>
                     )
@@ -92,3 +104,4 @@ function NavBar() {
 }
 
 export default NavBar
+

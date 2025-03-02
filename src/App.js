@@ -1,4 +1,4 @@
-import {  Routes, Route, HashRouter } from 'react-router-dom';
+import { Routes, Route, HashRouter, useLocation } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
@@ -15,9 +15,9 @@ AOS.init();
 
 function App() {
   return (
-    <div className='App font-montserrat'>
-      <NavBar />
-      <HashRouter>
+    <HashRouter>
+      <div className='App font-montserrat'>
+        <NavBarWrapper />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -27,10 +27,15 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
         </Routes>
-      </HashRouter>
-
-    </div>
+      </div>
+    </HashRouter>
   );
+}
+
+function NavBarWrapper() {
+  const location = useLocation();
+
+  return <NavBar path={location.pathname} />;
 }
 
 export default App;
