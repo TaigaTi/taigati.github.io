@@ -50,7 +50,7 @@ function DesignDetails() {
                             <img
                                 src={image}
                                 alt={design.title}
-                                className="m-5 w-full object-cover"
+                                className="m-5 w-full object-contain"
                             />
                         </SwiperSlide>
                     ))}

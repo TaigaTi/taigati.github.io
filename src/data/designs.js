@@ -7,7 +7,7 @@ const designs = [
             "A dynamic job application tracker designed to streamline career journey management."],
         cardImage: "assets/designs/jobwize/jobwize.png",
         headerImage: "assets/designs/jobwize/jobwize-header.png",
-        images: ["assets/designs/jobwize/jobwize.png", "assets/designs/jobwize/jobwize-header.png", "assets/designs/pellucid/pellucid.png", "assets/designs/pellucid/pellucid.png"],
+        images: ["assets/designs/jobwize/jobwize.png",],
         prototype: "",
         tags: ["Figma", "Mobile Design",],
     }, {
@@ -18,7 +18,7 @@ const designs = [
             "Designed and developed the company website for Pellucid IT."],
         cardImage: "assets/designs/pellucid/pellucid.png",
         headerImage: "assets/designs/pellucid/pellucid-header.png",
-        images: ["assets/designs/pellucid/pellucid.png", ""],
+        images: ["assets/designs/pellucid/pellucid.png",],
         prototype: "",
         tags: ["Canva", "Photoshop", "Web Design"],
     }, {
