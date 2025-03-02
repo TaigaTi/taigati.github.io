@@ -7,7 +7,7 @@ const designs = [
             "JobWize is a dynamic job application tracker designed to streamline career journey management."],
         cardImage: "assets/designs/jobwize/jobwize.png",
         headerImage: "assets/designs/jobwize/jobwize-header.png",
-        images: ["assets/designs/jobwize/jobwize.png", ""],
+        images: ["assets/designs/jobwize/jobwize.png", "assets/designs/jobwize/jobwize-header.png"],
         prototype: "",
         tags: ["Figma", "Mobile Design",],
     }, {
