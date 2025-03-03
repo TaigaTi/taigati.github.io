@@ -62,7 +62,7 @@ function NavBar(path) {
                 {links.map((link) => {
                     return (
                         <li key={link.id} className={checkActiveLink(link.url) ? 'active w-[80px]' : 'w-[80px]'}>
-                            <a href={link.url}>{link.text}</a>
+                            <a className="hover:text-[#d4c3eb] ease-in-out duration-300" href={link.url}>{link.text}</a>
                         </li>
                     )
                 })}
