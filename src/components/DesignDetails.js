@@ -15,12 +15,12 @@ function DesignDetails() {
             <div className="flex flex-col items-center p-5 md:p-8 md:px-10 rounded-xl min-w-[90%]">
                 <h1 className="text-3xl">{design.title}</h1>
 
-                <div className="px-3 my-2 flex flex-col items-center">
+                <div className="px-3 mt-2 flex flex-col items-center w-[55vw]">
                     <p className="text-center opacity-80 leading-relaxed">{design.longDescription}</p>
                 </div>
 
                 <Swiper
-                    modules={[Autoplay, EffectCoverflow, Navigation, Pagination]}
+                    modules={[ EffectCoverflow, Navigation, Pagination]}
                     autoplay={{ delay: 2500, disableOnInteraction: false }}
                     speed={1200}
                     effect="coverflow"
@@ -40,17 +40,17 @@ function DesignDetails() {
                         bulletActiveClass: "swiper-pagination-bullet-active scale-125",
                         bulletClass: "swiper-pagination-bullet",
                     }}
-                    className="w-[70%] max-w-screen-lg"
+                    className="w-[90vw] h-[70vh]"
                 >
                     {design.images.map((image, index) => (
                         <SwiperSlide
                             key={index}
-                            className="relative w-full transition-all duration-500"
+                            className="relative w-full h-full transition-all duration-500"
                         >
                             <img
                                 src={image}
                                 alt={design.title}
-                                className="m-5 w-full object-contain"
+                                className="m-5 max-w-full h-full object-contain"
                             />
                         </SwiperSlide>
                     ))}

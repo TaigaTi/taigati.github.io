@@ -5,3 +5,10 @@
 .swiper-pagination-bullet-active {
     background-color: #7052db !important;
 }
+
+.swiper-slide {
+    padding: 40px !important;
+    display: flex !important; 
+    justify-content: center !important;
+    align-items: center !important;
+}
