@@ -11,16 +11,16 @@ function DesignDetails() {
     const design = designs.find((design) => design.id === id)
 
     return (
-        <div className="design-details flex flex-col items-center px-5 md:px-8 md:px-10 min-h-[80vh]">
+        <div className="design-details flex flex-col items-center pt-10 md:pt-0 px-5 md:px-8 md:px-10 min-h-[80vh]">
             <div className="flex flex-col items-center p-5 md:p-8 md:px-10 rounded-xl min-w-[90%]">
                 <h1 className="text-3xl">{design.title}</h1>
 
-                <div className="px-3 mt-2 flex flex-col items-center w-[55vw]">
-                    <p className="text-center opacity-80 leading-relaxed">{design.longDescription}</p>
+                <div className="px-3 mt-4 md:mt-2 flex flex-col items-center w-[85vw] md:w-[55vw] mb-10 md:mb-0">
+                    <p className="text-center text-sm md:text-md opacity-80 leading-relaxed">{design.longDescription}</p>
                 </div>
 
                 <Swiper
-                    modules={[ EffectCoverflow, Navigation, Pagination]}
+                    modules={[Autoplay, EffectCoverflow, Navigation, Pagination]}
                     autoplay={{ delay: 2500, disableOnInteraction: false }}
                     speed={1200}
                     effect="coverflow"
@@ -40,7 +40,7 @@ function DesignDetails() {
                         bulletActiveClass: "swiper-pagination-bullet-active scale-125",
                         bulletClass: "swiper-pagination-bullet",
                     }}
-                    className="w-[90vw] h-[70vh]"
+                    className="w-[90vw] md:w-[90vw] h-[50vh] md:h-[70vh] bg-[#ffffff1b] md:bg-[#7052db00] rounded-xl"
                 >
                     {design.images.map((image, index) => (
                         <SwiperSlide
