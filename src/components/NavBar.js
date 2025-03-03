@@ -39,6 +39,12 @@ function NavBar(path) {
         },
         {
             id: 4,
+            url: '/#/designs',
+            text: 'Designs',
+            icon: 'fa-palette',
+        },
+        {
+            id: 5,
             url: '/#/contact',
             text: 'Contact',
             icon: 'fa-envelope',
