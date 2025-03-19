@@ -88,6 +88,16 @@ const projects = [
         link: "https://tictactoe-2.onrender.com",
         repo: "https://github.com/TaigaTi/TicTacToe-2",
     },
+    {
+        id: 10,
+        title: "District 6 AR Demo",
+        shortDescription: "AR Demo created for District 6's Booth at the 2025 UWI Job Fair",
+        longDescription: "AR Demo created for District 6's Booth at the 2025 UWI Job Fair",
+        tags: ["MindJS"],
+        image: "assets/projects/d6-ar.png",
+        link: "https://taigati.github.io/D6-AR-Demo/",
+        repo: "https://github.com/TaigaTi/D6-AR-Demo",
+    },
 
 ];
 
