@@ -1,16 +1,6 @@
 const projects = [
     {
         id: 1,
-        title: "Pellucid Web",
-        shortDescription: "Designed & developed the company website for Pellucid IT",
-        longDescription: "Designed and developed the company website for Pellucid IT.",
-        tags: ["Drupal"],
-        image: "assets/projects/pellucid.png",
-        link: "https://pellucidit.com/",
-        repo: "",
-    },
-    {
-        id: 2,
         title: "Tessera Web",
         shortDescription: "Designed and developed the company website for Tessera Studios",
         longDescription: "Designed and developed the company website for Tessera Studios.",
@@ -19,14 +9,24 @@ const projects = [
         link: "https://tessera-studios.com",
         repo: "",
     },
-     {
+    {
+       id: 2,
+       title: "Eye Disease Classifier",
+       shortDescription: "Machine learning project designed to automatically detect and classify common eye diseases from retinal images",
+       longDescription: "Machine learning project designed to automatically detect and classify common eye diseases from retinal images.",
+       tags: ["Python", "Streamlit"],
+       image: "assets/projects/eye-disease-classifier.png",
+       link: "https://eye-disease-classifier-taiga.streamlit.app",
+       repo: "",
+   },
+    {
         id: 3,
-        title: "Eye Disease Classifier",
-        shortDescription: "Machine learning project designed to automatically detect and classify common eye diseases from retinal images",
-        longDescription: "Machine learning project designed to automatically detect and classify common eye diseases from retinal images.",
-        tags: ["Python", "Streamlit"],
-        image: "assets/projects/eye-disease-classifier.png",
-        link: "https://eye-disease-classifier-taiga.streamlit.app",
+        title: "Pellucid Web",
+        shortDescription: "Designed & developed the company website for Pellucid IT",
+        longDescription: "Designed and developed the company website for Pellucid IT.",
+        tags: ["Drupal"],
+        image: "assets/projects/pellucid.png",
+        link: "https://pellucidit.com/",
         repo: "",
     },
     {
