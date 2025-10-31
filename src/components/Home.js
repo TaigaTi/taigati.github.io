@@ -54,31 +54,43 @@ function Home() {
                             data-aos="zoom-out"
                             data-aos-duration="800"
                             data-aos-easing="ease-in-out">
-                            <div className='about-card px-6'>
-                                <p className='text-6xl mb-2'>📚</p>
-                                <p className='pb-2 text-lg'>Bsc. Computer Science with Management</p>
-                                <p className='opacity-80'>Expected Grad: May 2025</p>
-                                <p className='opacity-80'>GPA: 3.88</p>
+                            <div className='about-card px-6 flex items-center gap-4 min-h-[25%]'>
+                                <p className='text-5xl'>📚</p>
+                                <div className='text-start'>
+                                    <p className='pb-1'>Bsc. Computer Science with Management</p>
+                                    <p className='pb-1'>First Class Honours</p>
+                                    <p className='opacity-80'>GPA: 3.89</p>
+                                </div>
                             </div>
 
-                            <div className='about-card px-6'>
-                                <p className='text-6xl mb-2'>💻</p>
-                                <p className='pb-2 text-lg'>Vice President of the Computer Science Society</p>
-                                <p className='opacity-80'>FST, UWI Cave Hill</p>
-                                <p className='opacity-80'>Jan 2025 - Present</p>
+                            <div className='about-card px-6 flex items-center gap-4'>
+                                <p className='text-5xl mb-2'>💻</p>
+                                <div className='text-start w-full'>
+                                    <p className='pb-1'>Founder of Tessera Studios</p>
+                                    <p className='opacity-80'>Software Development Company</p>
+                                    <a href="https://www.tessera-studios.com" className='opacity-80 flex justify-end'>
+                                        <i className="mt-2 fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
                             </div>
 
-                            <div className='about-card px-6'>
-                                <p className='text-6xl mb-2'>🏆</p>
-                                <p className='pb-2 text-lg px-8'>Award-Winning Artist</p>
-                                <p className='opacity-80'>8 years of experience</p>
+                            <div className='about-card px-6 flex items-center gap-4'>
+                                <p className='text-5xl mb-2'>🎨</p>
+                                <div className='text-start w-full'>
+                                    <p className='pb-1'>Founder of Querencia Studios</p>
+                                    <p className='opacity-80'>Art & Design Company</p>
+                                    <a href="https://querenciastudios.company.site" className='opacity-80 flex justify-end'>
+                                        <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
                             </div>
 
-                            <div className='about-card px-6'>
-                                <p className='text-6xl mb-2'>🎨</p>
-                                <p className='pb-2 text-lg'>Founder of Querencia Studios</p>
-                                <p className='opacity-80'>Art & Design Company</p>
-                                <a href="https://querenciastudios.company.site" className='opacity-80 flex justify-end'><i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <div className='about-card px-6 flex items-center gap-4'>
+                                <p className='text-5xl'>🏆</p>
+                                <div className='text-start'>
+                                    <p className='pb-1'>Award-Winning Artist</p>
+                                    <p className='opacity-80'>8 years of experience</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -94,7 +106,7 @@ function Home() {
                         data-aos-once="true"
                         data-aos-easing="ease-in-out"
                         className="experience-container flex flex-col gap-4 mt-4 p-2">
-                          {experience.map((experience) => {
+                        {experience.map((experience) => {
                             return (
                                 <ExperienceCard
                                     key={experience.id}
