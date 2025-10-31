@@ -22,7 +22,7 @@ function Home() {
                         <img className="artist-cursor" src="assets/cursors/artist-cursor.png" alt="Tarika Birch" />
                     </div>
                     <h1 className='text-5xl md:text-6xl mb-1'>Tarika Birch</h1>
-                    <img className="frontend" src="frontend.png" alt="Frontend Developer" />
+                    <img className="frontend" src="software-engineer.png" alt="Software Engineer" />
 
                     <a className="text-lg resume-button rounded mt-5 px-6 py-1 flex gap-2 items-center hover:scale-105 ease-in"
                         download="Tarika_Birch-Resume.pdf" href="assets/Tarika_Birch-Resume.pdf">
@@ -163,7 +163,7 @@ function Home() {
                     data-aos-once="true"
                     data-aos-easing="ease-in-out"
                     className='h-full flex justify-center items-center'>
-                    <img src="frontend.png" alt='Frontend Developer' className='frontend-footer' />
+                    <img src="software-engineer.png" alt='Software Engineer' className='frontend-footer' />
                 </div>
             </section>
 

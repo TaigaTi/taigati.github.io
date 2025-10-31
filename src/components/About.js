@@ -15,7 +15,7 @@ function About() {
                     <img className="about-avatar" src="technicallyti.png" alt="Tarika Birch" />
                     <div className='flex flex-col items-center gap-2 mt-5'>
                         <h1 className='text-2xl md:text-6xl mb-1'>Tarika Birch</h1>
-                        <img id="about-frontend" className="frontend" src="frontend.png" alt="Frontend Developer" />
+                        <img id="about-frontend" className="frontend" src="software-engineer.png" alt="Software Engineer" />
                         <a className="text-lg resume-button rounded mt-5 px-6 py-1 flex gap-2 items-center hover:scale-105 ease-in"
                             download="Tarika_Birch-Resume.pdf" href="assets/Tarika_Birch-Resume.pdf">
                             <i className="fa-regular fa-circle-down mr-1"></i>
@@ -33,25 +33,19 @@ function About() {
                             <p className='text-5xl'>📚</p>
                             <div className='text-start'>
                                 <p className='pb-1'>Bsc. Computer Science with Management</p>
-                                <p className='opacity-80'>Expected Grad: May 2025</p>
-                                <p className='opacity-80'>GPA: 3.88</p>
+                                <p className='pb-1'>First Class Honours</p>
+                                <p className='opacity-80'>GPA: 3.89</p>
                             </div>
                         </div>
 
                         <div className='about-card px-6 flex items-center gap-4'>
-                            <p className='text-5xl'>💻</p>
-                            <div className='text-start'>
-                                <p className='pb-1'>Vice President of the Computer Science Society</p>
-                                <p className='opacity-80'>FST, UWI Cave Hill</p>
-                                <p className='opacity-80'>Jan 2025 - Present</p>
-                            </div>
-                        </div>
-
-                        <div className='about-card px-6 flex items-center gap-4'>
-                            <p className='text-5xl'>🏆</p>
-                            <div className='text-start'>
-                                <p className='pb-1'>Award-Winning Artist</p>
-                                <p className='opacity-80'>8 years of experience</p>
+                            <p className='text-5xl mb-2'>💻</p>
+                            <div className='text-start w-full'>
+                                <p className='pb-1'>Founder of Tessera Studios</p>
+                                <p className='opacity-80'>Software Development Company</p>
+                                <a href="https://www.tessera-studios.com" className='opacity-80 flex justify-end'>
+                                    <i className="mt-2 fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
                             </div>
                         </div>
 
@@ -63,6 +57,14 @@ function About() {
                                 <a href="https://querenciastudios.company.site" className='opacity-80 flex justify-end'>
                                     <i className="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
+                            </div>
+                        </div>
+
+                        <div className='about-card px-6 flex items-center gap-4'>
+                            <p className='text-5xl'>🏆</p>
+                            <div className='text-start'>
+                                <p className='pb-1'>Award-Winning Artist</p>
+                                <p className='opacity-80'>8 years of experience</p>
                             </div>
                         </div>
                     </div>
@@ -105,8 +107,8 @@ function About() {
                             title="Bsc. Computer Science with Management"
                             company="University of the West Indies, Cave Hill"
                             startDate="Sep 2021"
-                            endDate="Present"
-                            location="Barbados"
+                            endDate="May 2025"
+                            location="GPA: 3.89"
                             logo="assets/logos/uwi.png"
                         />
                     </div>

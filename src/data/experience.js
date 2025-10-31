@@ -1,9 +1,25 @@
 const experience = [
     {
+        title: "Judiciary Software Engineer",
+        company: "Supreme Court of Barbados",
+        startDate: "September 2025",
+        endDate: "Present",
+        location: "Remote",
+        logo: "assets/logos/supreme-court-barbados.jpg",
+    },
+    {
+        title: "Machine Learning Fellow",
+        company: "FluoretiQ",
+        startDate: "July 2025",
+        endDate: "August 2025",
+        location: "Bristol, UK",
+        logo: "assets/logos/fluoretiq.jpeg",
+    },
+    {
         title: "Software Engineer",
         company: "District 6 Technologies",
         startDate: "Sep 2024",
-        endDate: "Present",
+        endDate: "May 2025",
         location: "Remote",
         logo: "assets/logos/d6.jpg",
     },

@@ -11,6 +11,26 @@ const projects = [
     },
     {
         id: 2,
+        title: "Tessera Web",
+        shortDescription: "Designed and developed the company website for Tessera Studios",
+        longDescription: "Designed and developed the company website for Tessera Studios.",
+        tags: ["React","Tailwind", "Typescript", "Figma"],
+        image: "assets/projects/tessera.png",
+        link: "https://tessera-studios.com",
+        repo: "",
+    },
+     {
+        id: 3,
+        title: "Eye Disease Classifier",
+        shortDescription: "Machine learning project designed to automatically detect and classify common eye diseases from retinal images",
+        longDescription: "Machine learning project designed to automatically detect and classify common eye diseases from retinal images.",
+        tags: ["Python", "Streamlit"],
+        image: "assets/projects/eye-disease-classifier.png",
+        link: "https://eye-disease-classifier-taiga.streamlit.app",
+        repo: "",
+    },
+    {
+        id: 4,
         title: "Recall Rumble",
         shortDescription: "Engaging memory matching game designed to test your recall abilities!",
         longDescription: "Recall Rumble is an engaging memory-matching game designed to test your recall abilities! Challenge yourself and see how well you can match your cards.",
@@ -20,7 +40,7 @@ const projects = [
         repo: "https://github.com/TaigaTi/Recall-Rumble",
     },
     {
-        id: 3,
+        id: 5,
         title: "JobWize",
         shortDescription: "A dynamic job application tracker designed to streamline career journey management",
         longDescription: "JobWize is a dynamic job application tracker designed to streamline the process of managing your career journey. It offers intuitive features for organization, analysis, and automation, making it easier to keep track of applications, resumes, and gain insights through user analytics.",
@@ -30,7 +50,7 @@ const projects = [
         repo: "https://github.com/TaigaTi/JobWize",
     },
     {
-        id: 4,
+        id: 6,
         title: "InSites",
         shortDescription: "A social media dashboard app designed to track user analytics across various social media platforms",
         longDescription: "InSites is a social media dashboard app designed to track user analytics across various social media platforms. InSites provides users with a comprehensive dashboard interface to monitor their social media performance and engagement metrics. The app offers insights into key metrics such as follower count, post interactions, and audience demographics across platforms like Instagram, Twitter, and more.",
@@ -40,7 +60,7 @@ const projects = [
         repo: "https://github.com/TaigaTi/InSites",
     },
     {
-        id: 5,
+        id: 7,
         title: "Simon Says",
         shortDescription: "A simple game of memory and pattern recognition",
         longDescription: "A simple game of memory and pattern recognition. The game features a series of buttons that the user must remember and repeat in the correct order.",
@@ -50,7 +70,7 @@ const projects = [
         repo: "https://github.com/TaigaTi/Simon-Says",
     },
     {
-        id: 6,
+        id: 8,
         title: "Bool School Learning Tool",
         shortDescription: "Learning tool designed to teach Boolean Algebra concepts",
         longDescription: "Implementation of a learning tool designed to instruct Boolean Algebra concepts using a combination of text, videos, slideshows, and quizzes. This initiative is part of a collaborative group project within the framework of a Computer Systems Architecture Course.",
@@ -60,7 +80,7 @@ const projects = [
         repo: "https://github.com/TaigaTi/The-Bool-School-Learning-Tool",
     },
     {
-        id: 7,
+        id: 9,
         title: "Watermelon Store",
         shortDescription: "An e-commerce platform for buying and selling watermelon products",
         longDescription: "An e-commerce platform for buying and selling watermelon products. The platform allows users to browse, search, and purchase watermelon products with a user-friendly interface.",
@@ -70,7 +90,7 @@ const projects = [
         repo: "https://github.com/TaigaTi/Watermelon-Store",
     },
     {
-        id: 8,
+        id: 10,
         title: "Equity Care",
         shortDescription: "A simple health consultancy website design",
         longDescription: "For my final project in an Entrepreneurship for Computer Scientists course, we were given 48 hours to research a problem, build a business based on that problem and create a website based on the problem/business. ",
@@ -79,7 +99,7 @@ const projects = [
         link: "https://taigati.github.io/Equity-Care/",
         repo: "https://github.com/TaigaTi/Equity-Care",
     }, {
-        id: 9,
+        id: 11,
         title: "Impossible Tic Tac Toe",
         shortDescription: "A game of Tic Tac Toe built using the Minimax Algorithm!",
         longDescription: "A simple game of tic-tac-toe. The game features a grid of buttons that the user can click to place their symbol (X or O) in a row, column, or diagonal to win the game.",
@@ -89,7 +109,7 @@ const projects = [
         repo: "https://github.com/TaigaTi/TicTacToe-2",
     },
     {
-        id: 10,
+        id: 12,
         title: "District 6 AR Demo",
         shortDescription: "AR Demo created for District 6's Booth at the 2025 UWI Job Fair",
         longDescription: "AR Demo created for District 6's Booth at the 2025 UWI Job Fair",

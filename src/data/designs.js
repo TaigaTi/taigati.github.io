@@ -17,7 +17,8 @@ const designs = [
         ],
         prototype: "",
         tags: ["Figma", "Mobile Design",],
-    }, {
+    },
+    {
         id: 2,
         title: "Pellucid Web",
         shortDescription: "Designed & developed the company website for Pellucid IT",

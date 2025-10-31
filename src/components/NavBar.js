@@ -101,7 +101,7 @@ function NavBar(path) {
                                 })}
                             </div>
                         </div>
-                        <img src="frontend.png" alt="" width={200} />
+                        <img src="software-engineer.png" alt="Software Engineer" width={200} />
                     </Box>
                 </Drawer>
             </div>
