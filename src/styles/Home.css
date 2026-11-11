@@ -253,6 +253,7 @@
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #d4c3eb55;
+  box-shadow: 0 0 40px #7b3fe455;
 }
 
 @media screen and (max-width: 600px) {

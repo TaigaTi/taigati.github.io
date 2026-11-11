@@ -51,7 +51,7 @@ function Home() {
                     <div className="who-am-i flex flex-col items-center justify-center gap-4 mt-6">
                     <img
                         className="profile-photo"
-                        src="assets/tarika-birch.webp"
+                        src="assets/tarika-birch-portrait.webp"
                         alt="Portrait of Tarika Birch"
                         width={240}
                         height={240}
