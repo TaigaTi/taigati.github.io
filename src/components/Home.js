@@ -108,6 +108,14 @@ function Home() {
                             endDate="May 2025"
                             location="GPA: 3.89"
                             logo="assets/logos/uwi.png"
+                            highlights={[
+                                "Graduated with First Class Honours (GPA 3.89)",
+                                "Vice President (Jan–May 2025) and Secretary (Sep 2023–Jan 2025) of the Computer Science Society, Faculty of Science and Technology",
+                                "Received the Faculty of Science and Technology Student Award in 2022 and 2023",
+                                "Project Manager for NarcoTech Physio Reminder, recognised as the top-performing project in COMP2225 Software Engineering (2023/24)",
+                                "Designed the covers of the Faculty of Science and Technology Undergraduate and Postgraduate Handbooks and Registration Guide",
+                                "Relevant coursework: Software Engineering, UI Design, Fundamentals of AI, Algorithms, Data Structures, Object-Oriented Programming, Computer Graphics and DBMS",
+                            ]}
                         />
                     </div>
 
