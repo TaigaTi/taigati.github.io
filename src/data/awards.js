@@ -73,31 +73,36 @@ const awards = [
         id: 18,
         type: "certificate",
         title: "UX Design Fundamentals",
-        issuer: "Coursera",
+        issuer: "California Institute of the Arts",
+        issued: "Jun 2025",
     },
     {
         id: 19,
         type: "certificate",
         title: "Visual Elements of User Interface Design",
-        issuer: "Coursera",
+        issuer: "California Institute of the Arts",
+        issued: "Jun 2025",
     },
     {
         id: 20,
         type: "certificate",
         title: "TypeScript",
         issuer: "Coursera",
+        issued: "Oct 2025",
     },
     {
         id: 21,
         type: "certificate",
         title: "Frontend Development using Angular",
         issuer: "Coursera",
+        issued: "Sep 2025",
     },
     {
         id: 22,
         type: "certificate",
         title: "The Nest JS Bootcamp: Complete Developer Guide",
         issuer: "Udemy",
+        issued: "Oct 2025",
     },
     {
         id: 11,
@@ -110,7 +115,7 @@ const awards = [
         id: 12,
         type: "certificate",
         title: "AngularJS for Beginners",
-        issuer: "SoloLearn",
+        issuer: "Coursera",
         issued: "Jun 2023"
     }, 
     {
