@@ -3,3 +3,53 @@
     min-height: 80px;
     background-color: #4d2f6949;
 }
+.award-card-clickable {
+    cursor: pointer;
+    color: inherit;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.award-card-clickable:hover {
+    background-color: #4d2f697a;
+    transform: translateY(-2px);
+}
+
+.award-card-clickable:focus-visible {
+    outline: 2px solid #d4c3eb;
+    outline-offset: 2px;
+}
+
+.award-action {
+    color: #d4c3eb;
+}
+
+.award-dialog.MuiPaper-root {
+    background: #1a0630;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid #d4c3eb33;
+}
+
+.award-dialog-close {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.award-dialog-close:hover,
+.award-dialog-close:focus-visible {
+    background-color: #d4c3eb1f;
+}
+
+.award-verify-button {
+    padding: 0.4rem 1.1rem;
+    border: 1px solid #d4c3eb;
+    border-radius: 999px;
+    color: #d4c3eb;
+    font-size: 0.875rem;
+}
+
+.award-verify-button:hover {
+    background-color: #d4c3eb1f;
+}

@@ -73,6 +73,7 @@ const awards = [
         id: 18,
         type: "certificate",
         title: "UX Design Fundamentals",
+        url: "https://www.coursera.org/account/accomplishments/verify/X3LPVB1KL17E",
         issuer: "California Institute of the Arts",
         issued: "Jun 2025",
     },
@@ -80,6 +81,7 @@ const awards = [
         id: 19,
         type: "certificate",
         title: "Visual Elements of User Interface Design",
+        url: "https://www.coursera.org/account/accomplishments/verify/FDPDESJVKYSZ",
         issuer: "California Institute of the Arts",
         issued: "Jun 2025",
     },
@@ -94,6 +96,7 @@ const awards = [
         id: 21,
         type: "certificate",
         title: "Frontend Development using Angular",
+        url: "https://www.coursera.org/account/accomplishments/verify/777HQ2C79COH",
         issuer: "Coursera",
         issued: "Sep 2025",
     },
@@ -108,6 +111,8 @@ const awards = [
         id: 11,
         type: "certificate",
         title: "JavaScript Basics",
+        image: "assets/certificates/javascript-basics.webp",
+        url: "https://www.coursera.org/account/accomplishments/verify/7K5FHX6RS72J",
         issuer: "Coursera",
         issued: "Aug 2022"
     }, 
@@ -115,6 +120,8 @@ const awards = [
         id: 12,
         type: "certificate",
         title: "AngularJS for Beginners",
+        image: "assets/certificates/angularjs-for-beginners.webp",
+        url: "https://www.coursera.org/account/accomplishments/verify/YA5KA24JMKKC",
         issuer: "Coursera",
         issued: "Jun 2023"
     }, 
@@ -122,6 +129,8 @@ const awards = [
         id: 13,
         type: "certificate",
         title: "Game Development with JS",
+        image: "assets/certificates/game-development-with-js.webp",
+        url: "https://www.sololearn.com/Certificate/1140-2698797/jpg",
         issuer: "SoloLearn",
         issued: "May 2022"
     }, 
@@ -130,7 +139,7 @@ const awards = [
         type: "certificate",
         title: "Knowledge Management",
         issuer: "Info-Tech Academy",
-        issued: "Jun 2023"
+        issued: "Jul 2023"
     },
     {
         id: 15,
@@ -151,7 +160,7 @@ const awards = [
         type: "certificate",
         title: "Vendor Management",
         issuer: "Info-Tech Academy",
-        issued: "Jun 2023"
+        issued: "Jul 2023"
     },
 ]
 
