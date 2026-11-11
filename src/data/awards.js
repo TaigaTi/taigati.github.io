@@ -89,6 +89,7 @@ const awards = [
         id: 20,
         type: "certificate",
         title: "TypeScript",
+        url: "https://www.coursera.org/account/accomplishments/verify/EDCN1KTFNZX6",
         issuer: "Coursera",
         issued: "Oct 2025",
     },
