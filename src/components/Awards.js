@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import AwardCard from './AwardCard'
 import awards from '../data/awards'
@@ -57,6 +57,11 @@ function Awards() {
     const [searchParams] = useSearchParams()
     const initialType = ['award', 'certificate'].includes(searchParams.get('type')) ? searchParams.get('type') : 'all'
     const [type, setType] = useState(initialType)
+
+    // Follow the link's filter when navigating between /awards variants without a reload.
+    useEffect(() => {
+        setType(initialType)
+    }, [initialType])
     const [issuer, setIssuer] = useState('all')
     const [sort, setSort] = useState('newest')
 
