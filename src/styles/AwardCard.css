@@ -53,3 +53,15 @@
 .award-verify-button:hover {
     background-color: #d4c3eb1f;
 }
+
+.award-dialog-image {
+    max-width: 100%;
+    max-height: calc(100vh - 200px);
+    object-fit: contain;
+}
+
+@media (max-width: 480px) {
+    .award-verify-button {
+        padding: 0.3rem 0.8rem;
+    }
+}

@@ -48,20 +48,20 @@ function AwardCard({ id }) {
                             <h2 id={`award-dialog-${award.id}`} className="text-lg">{award.title}</h2>
                             <p className="text-sm opacity-60">{award.issuer}{award.issued && ` · ${award.issued}`}</p>
                         </div>
-                        <button type="button" className="award-dialog-close" onClick={() => setOpen(false)} aria-label="Close">
-                            <i className="fa-solid fa-xmark" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                    <div className="px-5">
-                        <img src={award.image} alt={`${award.title} certificate`} className="w-full rounded-lg" />
-                    </div>
-                    {award.url && (
-                        <div className="flex justify-end p-5">
-                            <a href={award.url} target="_blank" rel="noopener noreferrer" className="award-verify-button">
-                                Verify<i className="fa-solid fa-arrow-up-right-from-square ml-2" aria-hidden="true"></i>
-                            </a>
+                        <div className="flex items-center gap-2 shrink-0">
+                            {award.url && (
+                                <a href={award.url} target="_blank" rel="noopener noreferrer" className="award-verify-button">
+                                    Verify<i className="fa-solid fa-arrow-up-right-from-square ml-2" aria-hidden="true"></i>
+                                </a>
+                            )}
+                            <button type="button" className="award-dialog-close" onClick={() => setOpen(false)} aria-label="Close">
+                                <i className="fa-solid fa-xmark" aria-hidden="true"></i>
+                            </button>
                         </div>
-                    )}
+                    </div>
+                    <div className="px-5 pb-5 flex justify-center">
+                        <img src={award.image} alt={`${award.title} certificate`} className="award-dialog-image rounded-lg" />
+                    </div>
                 </Dialog>
             </>
         )
