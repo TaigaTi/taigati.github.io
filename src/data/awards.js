@@ -33,9 +33,9 @@ const awards = [
         id: 5,
         type: "award",
         title: "Incentive Award for Excellence In Visual Arts",
-        image: "assets/awards/nifca-incentive-award-2019.webp",
+        image: "assets/awards/nifca-incentive-award-2018.webp",
         issuer: "National Independence Festival of Creative Arts",
-        issued: "Nov 2019"
+        issued: "Nov 2018"
     },
     {
         id: 6,
