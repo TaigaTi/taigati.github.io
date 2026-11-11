@@ -1,3 +1,40 @@
+const techSkills = [
+    { name: 'TypeScript', src: 'assets/tech-skills/typescript.svg' },
+    { name: 'JavaScript', src: 'assets/tech-skills/javascript.svg' },
+    { name: 'React', src: 'assets/tech-skills/react.svg' },
+    { name: 'Angular', src: 'assets/tech-skills/angular.svg' },
+    { name: 'Tailwind', src: 'assets/tech-skills/tailwind.svg' },
+    { name: 'Bootstrap', src: 'assets/tech-skills/bootstrap.svg' },
+    { name: 'Node.js', src: 'assets/tech-skills/nodejs.svg' },
+    { name: 'HTML', src: 'assets/tech-skills/html.svg' },
+    { name: 'CSS', src: 'assets/tech-skills/css.svg' },
+    { name: 'Drupal', src: 'assets/tech-skills/drupal.png' },
+    { name: 'Firebase', src: 'assets/tech-skills/firebase.svg' },
+    { name: 'Python', src: 'assets/tech-skills/python.png' },
+]
+
+const designTools = [
+    { name: 'Figma', src: 'assets/design-tools/figma.svg' },
+    { name: 'Illustrator', src: 'assets/design-tools/illustrator.png' },
+    { name: 'Procreate', src: 'assets/design-tools/procreate.webp' },
+    { name: 'Canva', src: 'assets/design-tools/canva.png' },
+    { name: 'Lightroom', src: 'assets/design-tools/lightroom.png' },
+    { name: 'Photoshop', src: 'assets/design-tools/photoshop.svg' },
+]
+
+function SkillGrid({ items, className }) {
+    return (
+        <ul className={`${className} grid gap-x-6 gap-y-6 pb-8`}>
+            {items.map(({ name, src }) => (
+                <li key={name} className="skill-item flex flex-col items-center gap-2">
+                    <img loading="lazy" src={src} alt="" />
+                    <span className="text-xs sm:text-sm opacity-80">{name}</span>
+                </li>
+            ))}
+        </ul>
+    )
+}
+
 function Skills() {
     return (
         <div className="flex gap-6 p-6 grid sm:grid-cols-1 md:grid-cols-2 w-full">
@@ -6,34 +43,14 @@ function Skills() {
                 data-aos-duration="800"
                 data-aos-easing="ease-in-out">
                 <h1 className='text-2xl pb-6'>Tech Skills</h1>
-                <div className='tech-skills-logos flex column grid grid-cols-4 gap-8 pb-8'>
-                    <img loading="lazy" src='assets/tech-skills/typescript.svg' alt="TypeScript" />
-                    <img loading="lazy" src='assets/tech-skills/javascript.svg' alt="JavaScript" />
-                    <img loading="lazy" src='assets/tech-skills/react.svg' alt="React" />
-                    <img loading="lazy" src='assets/tech-skills/angular.svg' alt="Angular" />
-                    <img loading="lazy" src='assets/tech-skills/tailwind.svg' alt="Tailwind" />
-                    <img loading="lazy" src='assets/tech-skills/bootstrap.svg' alt="Bootstrap" />
-                    <img loading="lazy" src='assets/tech-skills/nodejs.svg' alt="NodeJS" />
-                    <img loading="lazy" src='assets/tech-skills/html.svg' alt="HTML" />
-                    <img loading="lazy" src='assets/tech-skills/css.svg' alt="CSS" />
-                    <img loading="lazy" src='assets/tech-skills/drupal.png' alt="Drupal" />
-                    <img loading="lazy" src='assets/tech-skills/firebase.svg' alt="Firebase" />
-                    <img loading="lazy" src='assets/tech-skills/python.png' alt="Python" />
-                </div>
+                <SkillGrid items={techSkills} className="tech-skills-logos grid-cols-4" />
             </div>
             <div className='design-tools flex flex-col items-center'
                 data-aos="fade-left"
                 data-aos-duration="800"
                 data-aos-easing="ease-in-out">
                 <h1 className='text-2xl pb-6'>Design Tools</h1>
-                <div className='design-tools-logos flex column grid grid-cols-3 gap-8 pb-8'>
-                    <img loading="lazy" src='assets/design-tools/figma.svg' alt="Figma" />
-                    <img loading="lazy" src='assets/design-tools/illustrator.png' alt="Illustrator" />
-                    <img loading="lazy" src='assets/design-tools/procreate.webp' alt="Procreate" />
-                    <img loading="lazy" src='assets/design-tools/canva.png' alt="Canva" />
-                    <img loading="lazy" src='assets/design-tools/lightroom.png' alt="Lightroom" />
-                    <img loading="lazy" src='assets/design-tools/photoshop.svg' alt="Photoshop" />
-                </div>
+                <SkillGrid items={designTools} className="design-tools-logos grid-cols-3" />
             </div>
         </div>
     )

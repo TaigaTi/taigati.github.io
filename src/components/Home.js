@@ -89,7 +89,7 @@ function Home() {
                                 <p className='text-5xl'>🏆</p>
                                 <div className='text-start'>
                                     <p className='pb-1'>Award-Winning Artist</p>
-                                    <p className='opacity-80'>8 years of experience</p>
+                                    <p className='opacity-80'>{new Date().getFullYear() - 2016} years of experience</p>
                                 </div>
                             </div>
                         </div>
