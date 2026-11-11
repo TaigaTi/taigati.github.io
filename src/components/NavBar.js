@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { Drawer } from "@mui/material"
 import { useState } from "react"
 import { Box } from '@mui/material'
@@ -51,7 +52,12 @@ function NavBar(path) {
 
     return (
         <nav className="flex justify-between items-center p-4 mx-4">
-            <h1>Tarika Birch</h1>
+            <h1>
+                <Link to="/" className="hover:text-[#d4c3eb] ease-in-out duration-300"
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                    Tarika Birch
+                </Link>
+            </h1>
             <ul className="hidden md:flex gap-6">
                 {links.map((link) => {
                     return (
