@@ -10,6 +10,8 @@ const experience = [
             "Designed and built a design adapter for the government forms renderer, letting agencies create new forms in their own design system without building each one from scratch",
             "Built an automated form-filling tool that cut per-page completion from 3–5 minutes to 10–30 seconds (up to 97% faster)",
             "Raised test coverage of the forms and backend services to ~95% and enforced minimum coverage thresholds in CI",
+            "Built the GovBB Design System documentation site, documenting 13 form components with live examples and copyable code, and packaged 18 components as framework-agnostic CSS",
+            "Published AI skills that review pages against WCAG 2.2 AA and convert existing pages to the design system",
         ],
     },
     {
