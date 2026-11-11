@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import AwardCard from './AwardCard'
 import awards from '../data/awards'
 import '../styles/Awards.css'
@@ -53,7 +54,9 @@ function AwardSection({ id, title, items }) {
 
 function Awards() {
     const [query, setQuery] = useState('')
-    const [type, setType] = useState('all')
+    const [searchParams] = useSearchParams()
+    const initialType = ['award', 'certificate'].includes(searchParams.get('type')) ? searchParams.get('type') : 'all'
+    const [type, setType] = useState(initialType)
     const [issuer, setIssuer] = useState('all')
     const [sort, setSort] = useState('newest')
 

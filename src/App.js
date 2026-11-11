@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Routes, Route, HashRouter, Navigate, useLocation } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
@@ -17,6 +18,7 @@ function App() {
   return (
     <HashRouter>
       <div className='App font-montserrat'>
+        <ScrollToTop />
         <NavBarWrapper />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -31,6 +33,16 @@ function App() {
       </div>
     </HashRouter>
   );
+}
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 }
 
 function NavBarWrapper() {
