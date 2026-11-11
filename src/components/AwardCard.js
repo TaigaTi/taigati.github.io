@@ -3,16 +3,29 @@ import { Dialog } from '@mui/material'
 import '../styles/AwardCard.css'
 import awards from '../data/awards'
 
+// Issuer logos for certificates; anything not listed falls back to the generic icon.
+const ISSUER_LOGOS = {
+    "California Institute of the Arts": "assets/issuers/calarts.webp",
+    "Coursera": "assets/issuers/coursera.webp",
+    "Google": "assets/issuers/google.webp",
+    "Info-Tech Academy": "assets/issuers/infotech.webp",
+    "Scrimba": "assets/issuers/scrimba.webp",
+    "SoloLearn": "assets/issuers/sololearn.webp",
+    "Udemy": "assets/issuers/udemy.webp",
+}
+
 function AwardCard({ id }) {
     const [open, setOpen] = useState(false)
     const award = awards.find(award => award.id === id)
     const isCertificate = award.type === "certificate"
+    const [logoFailed, setLogoFailed] = useState(false)
+    const issuerLogo = isCertificate ? ISSUER_LOGOS[award.issuer] : null
 
     const content = (
         <>
-            {isCertificate
-                ? <img loading="lazy" src="assets/certificate.png" alt="" className='w-20 h-20' />
-                : <img loading="lazy" src="assets/award.png" alt="" className='w-20 h-20' />}
+            {issuerLogo && !logoFailed
+                ? <img loading="lazy" src={issuerLogo} alt="" className='award-issuer-logo' onError={() => setLogoFailed(true)} />
+                : <img loading="lazy" src={isCertificate ? "assets/certificate.png" : "assets/award.png"} alt="" className='w-20 h-20' />}
             <div className="award-info text-center md:text-start w-full">
                 <h1 className="lg:text-lg">{award.title}</h1>
                 <h2 className="opacity-60">{award.issuer}</h2>

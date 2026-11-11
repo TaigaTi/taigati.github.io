@@ -65,3 +65,13 @@
         padding: 0.3rem 0.8rem;
     }
 }
+
+.award-issuer-logo {
+    width: 4rem;
+    height: 4rem;
+    margin: 0.5rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: white;
+}
