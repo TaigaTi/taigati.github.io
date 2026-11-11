@@ -73,6 +73,15 @@ const awards = [
         issued: "Nov 2024"
     }, 
     {
+        id: 23,
+        type: "certificate",
+        title: "Introduction to AI",
+        image: "assets/certificates/introduction-to-ai.webp",
+        url: "https://www.coursera.org/account/accomplishments/verify/D0CWMINIF9IO",
+        issuer: "Google",
+        issued: "Jan 2026",
+    },
+    {
         id: 18,
         type: "certificate",
         title: "UX Design Fundamentals",
