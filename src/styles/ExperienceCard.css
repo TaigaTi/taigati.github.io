@@ -61,16 +61,19 @@ button.experience-header:hover .experience-toggle,
   grid-template-rows: 1fr;
 }
 
-.experience-highlights {
+.experience-details-inner {
   overflow: hidden;
   min-height: 0;
+}
+
+.experience-highlights {
   list-style: disc;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.experience-card:not(.open) .experience-highlights {
+.experience-card:not(.open) .experience-details-inner {
   visibility: hidden;
   transition: visibility 0s 0.3s;
 }

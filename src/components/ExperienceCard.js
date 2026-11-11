@@ -37,11 +37,13 @@ function ExperienceCard({ title, company, startDate, endDate, location, logo, hi
 
             {expandable && (
                 <div className="experience-details">
-                    <ul className="experience-highlights text-start text-sm opacity-80 px-6 pb-6 md:pl-[110px]">
-                        {highlights.map((highlight) => (
-                            <li key={highlight}>{highlight}</li>
-                        ))}
-                    </ul>
+                    <div className="experience-details-inner">
+                        <ul className="experience-highlights text-start text-sm opacity-80 px-6 pb-6 md:pl-[110px]">
+                            {highlights.map((highlight) => (
+                                <li key={highlight}>{highlight}</li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             )}
         </div>
