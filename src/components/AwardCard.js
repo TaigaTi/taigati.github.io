@@ -3,7 +3,7 @@ import { Dialog } from '@mui/material'
 import '../styles/AwardCard.css'
 import awards from '../data/awards'
 
-// Issuer logos for certificates; anything not listed falls back to the generic icon.
+// Issuer logos for awards and certificates; anything not listed falls back to the generic icon.
 const ISSUER_LOGOS = {
     "California Institute of the Arts": "assets/issuers/calarts.webp",
     "Coursera": "assets/issuers/coursera.webp",
@@ -12,6 +12,10 @@ const ISSUER_LOGOS = {
     "Scrimba": "assets/issuers/scrimba.webp",
     "SoloLearn": "assets/issuers/sololearn.webp",
     "Udemy": "assets/issuers/udemy.webp",
+    "FST, UWI": "assets/logos/uwi.png",
+    "Microsoft UK and UWI": "assets/issuers/microsoft.webp",
+    "National Independence Festival of Creative Arts": "assets/issuers/ncf.webp",
+    "Zindi": "assets/issuers/zindi.webp",
 }
 
 function AwardCard({ id }) {
@@ -19,7 +23,7 @@ function AwardCard({ id }) {
     const award = awards.find(award => award.id === id)
     const isCertificate = award.type === "certificate"
     const [logoFailed, setLogoFailed] = useState(false)
-    const issuerLogo = isCertificate ? ISSUER_LOGOS[award.issuer] : null
+    const issuerLogo = ISSUER_LOGOS[award.issuer]
 
     const content = (
         <>
