@@ -48,16 +48,16 @@ function Home() {
             <section id="experience-about" className="p-6">
                 <div className="container">
                     <h1 className='text-2xl md:text-4xl'>Who Am I?</h1>
-                    <div className="who-am-i flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 mt-6">
+                    <div className="who-am-i flex flex-col items-center justify-center gap-4 mt-6">
                     <img
                         className="profile-photo"
                         src="assets/tarika-birch.webp"
                         alt="Portrait of Tarika Birch"
-                        width={320}
-                        height={320}
+                        width={240}
+                        height={240}
                         loading="lazy"
                         decoding="async"
-                        data-aos="fade-right"
+                        data-aos="zoom-in"
                         data-aos-duration="800"
                         data-aos-once="true"
                     />
