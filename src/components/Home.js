@@ -7,6 +7,7 @@ import ProjectPreview from './ProjectPreview';
 import AwardCard from './AwardCard';
 import projects from '../data/projects';
 import awards from '../data/awards';
+import { newestFirst } from '../utils/awardDates';
 import experience from '../data/experience';
 import { Link } from 'react-router-dom';
 
@@ -167,7 +168,7 @@ function Home() {
                 </div>
 
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
-                    {awards.filter((award) => award.type === "award").slice(0, 3).map((award) => (
+                    {awards.filter((award) => award.type === "award").sort(newestFirst).slice(0, 3).map((award) => (
                         <AwardCard key={award.id} {...award} />
                     ))}
                 </div>
@@ -183,6 +184,7 @@ function Home() {
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
                     {awards
                         .filter((award) => award.type === "certificate")
+                        .sort(newestFirst)
                         .slice(0, 3)
                         .map((award) => (
                             <AwardCard key={award.id} {...award} />
