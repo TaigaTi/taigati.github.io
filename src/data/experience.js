@@ -84,6 +84,11 @@ const experience = [
         endDate: "Aug 2023",
         location: "Remote",
         logo: "assets/logos/ncsc.jpg",
+        highlights: [
+            "Enhanced the UI design of the Barbados Court Management System, making it more intuitive for court personnel and stakeholders",
+            "Collaborated with the Senior Judiciary Software Engineer on design improvements to the Court Management System",
+            "Took part in regular feedback sessions with developers and stakeholders to keep design iterations aligned with user expectations",
+        ],
     },
     {
         title: "Digital Transformation Intern",
@@ -92,6 +97,11 @@ const experience = [
         endDate: "Jul 2023",
         location: "Barbados",
         logo: "assets/logos/cbb.png",
+        highlights: [
+            "Developed prototypes for a Knowledge Transfer tool to capture critical knowledge and support business continuity across teams",
+            "Worked with the Business Analyst to create schematics and workflow diagrams that supported strategic decision-making",
+            "Designed flyers and posters in Canva Pro to raise awareness of the bank's digital transformation initiatives",
+        ],
     },
 ]
 
