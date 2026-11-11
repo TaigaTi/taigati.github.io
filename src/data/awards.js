@@ -90,10 +90,10 @@ const awards = [
     {
         id: 20,
         type: "certificate",
-        title: "TypeScript",
+        title: "Learn TypeScript",
         image: "assets/certificates/typescript.webp",
         url: "https://www.coursera.org/account/accomplishments/verify/EDCN1KTFNZX6",
-        issuer: "Coursera",
+        issuer: "Scrimba",
         issued: "Oct 2025",
     },
     {
