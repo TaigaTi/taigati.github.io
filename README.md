@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Tarika Birch — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio for Tarika Birch, software engineer. Live at **[tarikabirch.com](https://tarikabirch.com)**.
 
-## Available Scripts
+It covers experience, projects, design work, and awards & certificates.
 
-In the project directory, you can run:
+## Tech
 
-### `npm start`
+- React (Create React App) with React Router (`HashRouter`)
+- Tailwind CSS plus component stylesheets in `src/styles/`
+- Material UI for the mobile menu drawer and certificate viewer
+- AOS for scroll animations
+- Hosted on GitHub Pages from the `gh-pages` branch
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+public/
+  assets/            images, logos, certificates, resume PDF
+  CNAME              custom domain (kept here so every deploy includes it)
+src/
+  components/        pages (Home, Projects, Designs, Awards, Contact) and cards
+  data/              content: experience, projects, designs, awards
+  styles/            per-component CSS
+```
 
-### `npm test`
+Most content changes only touch `src/data/`:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| File | What it holds |
+|---|---|
+| `experience.js` | Roles, dates, logos and the expandable highlights |
+| `projects.js` | Project cards and links |
+| `designs.js` | Design case studies and their images |
+| `awards.js` | Awards and certificates. Optional `image` opens a viewer; optional `url` adds a Verify link |
 
-### `npm run build`
+Issuer logos for awards and certificates are mapped by issuer name in `src/components/AwardCard.js`; issuers without a logo fall back to the generic icon.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Scripts
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm start        # dev server at http://localhost:3000
+npm test         # run tests
+npm run build    # production build into build/
+npm run deploy   # build and publish to the gh-pages branch
+```

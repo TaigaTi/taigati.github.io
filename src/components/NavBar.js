@@ -7,16 +7,8 @@ import '../styles/NavBar.css'
 function NavBar(path) {
     const [open, setOpen] = useState(false)
 
-    function checkActiveLink(linkUrl) {
-        linkUrl = linkUrl.split("/#")
-
-        if (linkUrl.length > 1) {
-            linkUrl = linkUrl[1]
-        } else {
-            linkUrl = linkUrl[0]
-        }
-
-        return path['path'] === linkUrl
+    function checkActiveLink(linkPath) {
+        return path['path'] === linkPath
     }
 
     const links = [
@@ -28,25 +20,25 @@ function NavBar(path) {
         },
         {
             id: 3,
-            url: '/#/projects',
+            url: '/projects',
             text: 'Projects',
             icon: 'fa-briefcase',
         },
         {
             id: 4,
-            url: '/#/designs',
+            url: '/designs',
             text: 'Designs',
             icon: 'fa-palette',
         },
         {
             id: 6,
-            url: '/#/awards',
+            url: '/awards',
             text: 'Awards',
             icon: 'fa-award',
         },
         {
             id: 5,
-            url: '/#/contact',
+            url: '/contact',
             text: 'Contact',
             icon: 'fa-envelope',
         }
@@ -68,15 +60,15 @@ function NavBar(path) {
                 {links.map((link) => {
                     return (
                         <li key={link.id} className={checkActiveLink(link.url) ? 'active w-[80px]' : 'w-[80px]'}>
-                            <a className="hover:text-[#d4c3eb] ease-in-out duration-300" href={link.url}>{link.text}</a>
+                            <Link className="hover:text-[#d4c3eb] ease-in-out duration-300" to={link.url}>{link.text}</Link>
                         </li>
                     )
                 })}
             </ul>
 
             <div className="md:hidden">
-                <button onClick={toggleDrawer(true)}>
-                    <i className="fa-solid fa-bars"></i>
+                <button onClick={toggleDrawer(true)} aria-label="Open menu">
+                    <i className="fa-solid fa-bars" aria-hidden="true"></i>
                 </button>
                 <Drawer open={open} onClose={toggleDrawer(false)}>
                     <Box id="drawer"
@@ -98,11 +90,11 @@ function NavBar(path) {
                             <div className="flex w-full flex-col gap-9 px-2">
                                 {links.map((link) => {
                                     return (
-                                        <a key={link.id} className="flex gap-4 items-center"
-                                            href={link.url}>
-                                            <i key={link.id} className={link.icon + ' fa-solid'}></i>
+                                        <Link key={link.id} className="flex gap-4 items-center"
+                                            to={link.url}>
+                                            <i className={link.icon + ' fa-solid'} aria-hidden="true"></i>
                                             {link.text}
-                                        </a>
+                                        </Link>
                                     )
                                 })}
                             </div>

@@ -17,9 +17,9 @@ function Home() {
                 <div className="container flex flex-col items-center justify-center gap-2">
                     <img className="avatar" src="technicallyti.png" alt="Tarika Birch" />
                     <div id="cursor-container-landing">
-                        <img className="developer-cursor" src="assets/cursors/developer-cursor.png" alt="Tarika Birch" />
-                        <img className="designer-cursor" src="assets/cursors/designer-cursor.png" alt="Tarika Birch" />
-                        <img className="artist-cursor" src="assets/cursors/artist-cursor.png" alt="Tarika Birch" />
+                        <img className="developer-cursor" src="assets/cursors/developer-cursor.png" alt="" />
+                        <img className="designer-cursor" src="assets/cursors/designer-cursor.png" alt="" />
+                        <img className="artist-cursor" src="assets/cursors/artist-cursor.png" alt="" />
                     </div>
                     <h1 className='text-5xl md:text-6xl mb-1'>Tarika Birch</h1>
                     <img className="frontend" src="software-engineer.png" alt="Software Engineer" />
@@ -149,7 +149,7 @@ function Home() {
             <section id="projects" className='w-full p-2 md:p-10'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Latest Projects</h1>
-                    <a href='/#/projects' className='hover:text-purple-300 ease-in duration-200'>View All</a>
+                    <Link to='/projects' className='hover:text-purple-300 ease-in duration-200'>View All</Link>
                 </div>
 
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>

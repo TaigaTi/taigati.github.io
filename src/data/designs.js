@@ -60,7 +60,6 @@ const designs = [
         longDescription: [
             "Recall Rumble is an engaging memory matching game designed to test your recall abilities! Challenge yourself and see how well you can match your cards."],
         cardImage: "assets/designs/recall-rumble/recall-rumble.webp",
-        headerImage: "assets/designs/recall-rumble/recall-rumble-header.webp",
         images: [
             "assets/designs/recall-rumble/recall-rumble.webp",
             "assets/designs/recall-rumble/recall-rumble-web.webp",
@@ -76,7 +75,6 @@ const designs = [
         longDescription: [
             "Branding, marketing materials and video editing for Querencia Studios."],
         cardImage: "assets/designs/querencia-studios/querencia-studios.webp",
-        headerImage: "assets/designs/querencia-studios/querencia-studios-header.webp",
         images: [
             "assets/designs/querencia-studios/querencia-studios.webp",
             "assets/designs/querencia-studios/querencia-business-card-front.webp",
@@ -93,7 +91,6 @@ const designs = [
         longDescription: [
             "Branding and marketing materials for Computer Science Society, Faculty of Science and Technology at the University of the West Indies, Cave Hill."],
         cardImage: "assets/designs/css/css.webp",
-        headerImage: "assets/designs/css/css-header.webp",
         images: [
             "assets/designs/css/css-qr-code.webp",
             "assets/designs/css/css-agm-poster.webp",
@@ -110,7 +107,6 @@ const designs = [
         longDescription: [
             "Branding and marketing materials for The Document Place."],
         cardImage: "assets/designs/tdp/tdp.webp",
-        headerImage: "assets/designs/tdp/tdp-header.webp",
         images: [
             "assets/designs/tdp/tdp-business-card-back.webp",
             "assets/designs/tdp/tdp-business-card.webp",
@@ -128,7 +124,6 @@ const designs = [
         longDescription: [
             "Logo creation, branding and marketing materials for Academic Link-Edu."],
         cardImage: "assets/designs/alu/alu.webp",
-        headerImage: "assets/designs/alu/alu-header.webp",
         images: [
             "assets/designs/alu/alu.webp",
             "assets/designs/alu/academic-link-edu-logo-vision-board.webp",],

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../styles/DesignCard.css'
 import designs from '../data/designs'
 
@@ -6,7 +7,7 @@ function DesignCard({ id }) {
 
     return (
         <>
-            <a className="design-card container text-start" href={`/#/designs/${design.id}`} >
+            <Link className="design-card container text-start" to={`/designs/${design.id}`} >
                 <img className="design-image h-1/2" loading="lazy" decoding="async" src={design.cardImage} alt={design.title} />
                 <div className='design-info h-1/2 container p-6 pt-4 pb-8 flex flex-col justify-evenly'>
                     <div className="design-text pb-1">
@@ -21,7 +22,7 @@ function DesignCard({ id }) {
                         })}
                     </div>
                 </div>
-            </a>
+            </Link>
         </>
     )
 }

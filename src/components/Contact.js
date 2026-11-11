@@ -73,7 +73,7 @@ function Contact() {
                         <div className='w-full h-full flex flex-col items-center'>
                             <div id="email-page" className='page' style={{ display: "block" }}>
                                 <div className="animation flex flex-col items-center">
-                                    <img src="assets/contact-animations/email.gif" alt="Email" width={200} />
+                                    <img src="assets/contact-animations/email.webp" alt="Email" width={200} />
                                 </div>
                                 <p>tarikabirch@gmail.com</p>
                                 <div className="button flex flex-col items-center">
@@ -85,7 +85,7 @@ function Contact() {
 
                             <div id="linkedin-page" className='page'>
                                 <div className="animation flex flex-col items-center">
-                                    <img src="assets/contact-animations/linkedin.gif" alt="LinkedIn" width={200} />
+                                    <img src="assets/contact-animations/linkedin.webp" alt="LinkedIn" width={200} />
                                 </div>
                                 <p>tarika-birch</p>
                                 <div className="button flex flex-col items-center">
@@ -98,7 +98,7 @@ function Contact() {
 
                             <div id="github-page" className='page'>
                                 <div className="animation flex flex-col items-center">
-                                    <img src="assets/contact-animations/github.gif" alt="GitHub" width={200} />
+                                    <img src="assets/contact-animations/github.webp" alt="GitHub" width={200} />
                                 </div>
                                 <p>taigati</p>
                                 <div className="button flex flex-col items-center">
@@ -110,7 +110,7 @@ function Contact() {
 
                             <div id="medium-page" className='page'>
                                 <div className="animation flex flex-col items-center">
-                                    <img src="assets/contact-animations/medium.gif" alt="Medium" width={200} />
+                                    <img src="assets/contact-animations/medium.webp" alt="Medium" width={200} />
                                 </div>
                                 <p>tarikabirch</p>
                                 <div className="button flex flex-col items-center">
@@ -122,7 +122,7 @@ function Contact() {
 
                             <div id="youtube-page" className='page'>
                                 <div className="animation flex flex-col items-center opacity-70">
-                                    <img src="assets/contact-animations/youtube.gif" alt="Youtube" width={200} />
+                                    <img src="assets/contact-animations/youtube.webp" alt="Youtube" width={200} />
                                 </div>
                                 <p>Technically Ti</p>
                                 <div className="button flex flex-col items-center">
