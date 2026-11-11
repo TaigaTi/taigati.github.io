@@ -7,10 +7,9 @@ const experience = [
         location: "Hybrid, Barbados",
         logo: "assets/logos/govtech-barbados.png",
         highlights: [
-            "Architected a modular design adapter that lets each government render forms in its own design system without rebuilding them",
+            "Designed and built a design adapter for the government forms renderer, letting agencies create new forms in their own design system without building each one from scratch",
             "Built an automated form-filling tool that cut per-page completion from 3–5 minutes to 10–30 seconds (up to 97% faster)",
             "Raised test coverage of the forms and backend services to ~95% and enforced minimum coverage thresholds in CI",
-            "Built the applicant journey for a shared government forms platform: step-by-step navigation, uploads, answer review and payment retry",
         ],
     },
     {
@@ -22,8 +21,8 @@ const experience = [
         logo: "assets/logos/supreme-court-barbados.jpg",
         highlights: [
             "Designed a centralized Role-Based Access Control service for the Court Management System, cutting permission update time by ~90%",
+            "Designed and built a program that automates jury duty selection for the Supreme Court, replacing the manual process",
             "Built secure RESTful APIs with NestJS to support case management",
-            "Wrote automated unit test suites with Karma and Jasmine",
         ],
     },
     {
@@ -55,7 +54,7 @@ const experience = [
     {
         title: "Software Developer",
         company: "Pellucid IT",
-        startDate: "Jul 2024",
+        startDate: "Jun 2024",
         endDate: "Jan 2025",
         location: "Remote",
         logo: "assets/logos/pellucid.png",
@@ -69,7 +68,7 @@ const experience = [
         title: "Software Developer Intern",
         company: "Pellucid IT",
         startDate: "Jan 2024",
-        endDate: "Jul 2024",
+        endDate: "Jun 2024",
         location: "Remote",
         logo: "assets/logos/pellucid.png",
         highlights: [
