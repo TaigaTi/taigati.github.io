@@ -1,11 +1,12 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Tarika Birch",
+  "name": "Tarika Birch — Software Engineer",
+  "description": "Portfolio of Tarika Birch, software engineer and designer.",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "t.png",
+      "type": "image/png",
+      "sizes": "500x500"
     },
     {
       "src": "logo192.png",
@@ -20,6 +21,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#070122",
+  "background_color": "#070122"
 }

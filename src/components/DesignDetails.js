@@ -49,6 +49,8 @@ function DesignDetails() {
                         >
                             <img
                                 src={image}
+                                loading={index === 0 ? "eager" : "lazy"}
+                                decoding="async"
                                 alt={design.title}
                                 className="m-5 max-w-full h-full object-contain"
                             />

@@ -6,6 +6,12 @@ const experience = [
         endDate: "Present",
         location: "Hybrid, Barbados",
         logo: "assets/logos/govtech-barbados.png",
+        highlights: [
+            "Architected a modular design adapter that lets each government render forms in its own design system without rebuilding them",
+            "Built an automated form-filling tool that cut per-page completion from 3–5 minutes to 10–30 seconds (up to 97% faster)",
+            "Raised test coverage of the forms and backend services to ~95% and enforced minimum coverage thresholds in CI",
+            "Built the applicant journey for a shared government forms platform: step-by-step navigation, uploads, answer review and payment retry",
+        ],
     },
     {
         title: "Judiciary Software Engineer",
@@ -14,6 +20,11 @@ const experience = [
         endDate: "February 2026",
         location: "Remote",
         logo: "assets/logos/supreme-court-barbados.jpg",
+        highlights: [
+            "Designed a centralized Role-Based Access Control service for the Court Management System, cutting permission update time by ~90%",
+            "Built secure RESTful APIs with NestJS to support case management",
+            "Wrote automated unit test suites with Karma and Jasmine",
+        ],
     },
     {
         title: "Machine Learning Fellow",
@@ -22,6 +33,11 @@ const experience = [
         endDate: "August 2025",
         location: "Bristol, UK",
         logo: "assets/logos/fluoretiq.jpeg",
+        highlights: [
+            "Performed exploratory data analysis on microscopy datasets to identify key features for bacterial classification",
+            "Designed, trained and evaluated machine learning models in Python, iterating on performance metrics",
+            "Automated the gathering, sorting and filtering of bacterial sample data to speed up model training",
+        ],
     },
     {
         title: "Software Engineer",
@@ -30,6 +46,11 @@ const experience = [
         endDate: "May 2025",
         location: "Remote",
         logo: "assets/logos/d6.jpg",
+        highlights: [
+            "Built interactive Figma prototypes to validate usability early in the product lifecycle",
+            "Implemented responsive, mobile-first interfaces with HTMX and Tailwind CSS",
+            "Gathered requirements from clients and translated them into intuitive solutions",
+        ],
     },
     {
         title: "Software Developer",
@@ -38,6 +59,11 @@ const experience = [
         endDate: "Jan 2025",
         location: "Remote",
         logo: "assets/logos/pellucid.png",
+        highlights: [
+            "Designed and developed the Pellucid IT company website with Drupal",
+            "Built a custom deployment module that automated configuration management and streamlined CI/CD",
+            "Mentored a software development intern through code reviews and best practices",
+        ],
     },
     {
         title: "Software Developer Intern",
@@ -46,6 +72,11 @@ const experience = [
         endDate: "Jul 2024",
         location: "Remote",
         logo: "assets/logos/pellucid.png",
+        highlights: [
+            "Designed and built a modern React interface for the CPAG Biodiversity Dashboard, streamlining Protected Areas management",
+            "Helped merge the CPAG Biodiversity and Conservation Dashboard codebases, removing duplicated modules",
+            "Took part in code reviews to keep quality consistent across all CPAG platforms",
+        ],
     },
     {
         title: "Judiciary Software Engineer",

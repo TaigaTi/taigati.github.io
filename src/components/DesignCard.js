@@ -7,7 +7,7 @@ function DesignCard({ id }) {
     return (
         <>
             <a className="design-card container text-start" href={`/#/designs/${design.id}`} >
-                <img className="design-image h-1/2" src={design.cardImage} alt={design.title} />
+                <img className="design-image h-1/2" loading="lazy" decoding="async" src={design.cardImage} alt={design.title} />
                 <div className='design-info h-1/2 container p-6 pt-4 pb-8 flex flex-col justify-evenly'>
                     <div className="design-text pb-1">
                         <h1 className="text-lg mb-2">{design.title}</h1>

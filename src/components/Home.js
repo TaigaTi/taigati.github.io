@@ -7,7 +7,6 @@ import ProjectPreview from './ProjectPreview';
 import AwardCard from './AwardCard';
 import projects from '../data/projects';
 import awards from '../data/awards';
-import { HashLink } from 'react-router-hash-link';
 import experience from '../data/experience';
 
 function Home() {
@@ -48,7 +47,7 @@ function Home() {
                 <div className="container">
                     <h1 className='text-2xl md:text-4xl'>Who Am I?</h1>
                     <div className="flex flex-col items-center justify-center gap-2">
-                        <p className='md:text-lg p-2 pt-1 md:p-6 md:pt-1 opacity-80'>Frontend developer who enjoys crafting user-friendly experiences</p>
+                        <p className='md:text-lg p-2 pt-1 md:p-6 md:pt-1 opacity-80'>Software engineer who enjoys crafting user-friendly experiences</p>
 
                         <div className='flex flex-col md:flex-row gap-4 grid sm:grid-cols-2 md:grid-cols-2'
                             data-aos="zoom-out"
@@ -99,6 +98,19 @@ function Home() {
 
             <section id="experience" className="my-10 py-10">
                 <div id="experience-jobs" className='mt-10 md:mt-0'>
+                    <h1 className="text-2xl">Education</h1>
+
+                    <div className="experience-container flex flex-col gap-4 mt-4 p-2 pb-10">
+                        <ExperienceCard
+                            title="Bsc. Computer Science with Management"
+                            company="University of the West Indies, Cave Hill"
+                            startDate="Sep 2021"
+                            endDate="May 2025"
+                            location="GPA: 3.89"
+                            logo="assets/logos/uwi.png"
+                        />
+                    </div>
+
                     <h1 className="text-2xl">Experience</h1>
 
                     <div data-aos="fade-up"
@@ -109,13 +121,14 @@ function Home() {
                         {experience.map((experience) => {
                             return (
                                 <ExperienceCard
-                                    key={experience.id}
+                                    key={`${experience.company}-${experience.title}`}
                                     title={experience.title}
                                     company={experience.company}
                                     startDate={experience.startDate}
                                     endDate={experience.endDate}
                                     location={experience.location}
                                     logo={experience.logo}
+                                    highlights={experience.highlights}
                                 />
                             )
                         })}
@@ -137,30 +150,27 @@ function Home() {
 
             </section>
 
-            <section className='w-full p-10 px-2 md:p-10 my-12 md:my-0'>
+            <section id="awards" className='w-full p-10 px-2 md:p-10 my-12 md:my-0'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Awards</h1>
-                    <HashLink to="/about/#awards" className='hover:text-purple-300 ease-in duration-200'>View All</HashLink>
                 </div>
 
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
-                    {awards.filter((award) => award.type === "award").slice(0, 3).map((award) => (
+                    {awards.filter((award) => award.type === "award").map((award) => (
                         <AwardCard key={award.id} {...award} />
                     ))}
                 </div>
 
             </section>
 
-            <section className='w-full p-2 md:p-10'>
+            <section id="certificates" className='w-full p-2 md:p-10'>
                 <div className='flex justify-between px-8'>
                     <h1 className="text-2xl">Certificates</h1>
-                    <HashLink to="/about/#certificates" className='hover:text-purple-300 ease-in duration-200'>View All</HashLink>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-4 p-6'>
                     {awards
                         .filter((award) => award.type === "certificate")
-                        .slice(0, 3)
                         .map((award) => (
                             <AwardCard key={award.id} {...award} />
                         ))}
@@ -175,7 +185,7 @@ function Home() {
                     data-aos-once="true"
                     data-aos-easing="ease-in-out"
                     className='h-full flex justify-center items-center'>
-                    <img src="software-engineer.png" alt='Software Engineer' className='frontend-footer' />
+                    <img src="software-engineer.png" alt='Software Engineer' className='frontend-footer' loading="lazy" />
                 </div>
             </section>
 

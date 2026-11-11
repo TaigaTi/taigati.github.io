@@ -26,12 +26,6 @@ function NavBar(path) {
             icon: 'fa-home',
         },
         {
-            id: 2,
-            url: '/#/about',
-            text: 'About',
-            icon: 'fa-user',
-        },
-        {
             id: 3,
             url: '/#/projects',
             text: 'Projects',
@@ -84,7 +78,7 @@ function NavBar(path) {
                                     <img src="technicallyti.png" alt="" width={50} className="rounded-full pb-1" />
                                     <div>
                                         <h1 className="text-xl">Tarika Birch</h1>
-                                        <h2 className="text-sm opacity-60">Frontend Developer</h2>
+                                        <h2 className="text-sm opacity-60">Software Engineer</h2>
                                     </div>
                                 </div>
                                 <div id="drawer-divider"></div>

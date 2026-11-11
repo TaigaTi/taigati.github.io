@@ -1,8 +1,7 @@
-import { Routes, Route, HashRouter, useLocation } from 'react-router-dom';
+import { Routes, Route, HashRouter, Navigate, useLocation } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
-import About from './components/About';
 import Projects from './components/Projects';
 import Designs from './components/Designs';
 import Contact from './components/Contact';
@@ -20,7 +19,7 @@ function App() {
         <NavBarWrapper />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<Navigate to="/" replace />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/designs" element={<Designs />} />
           <Route path="/designs/:id" element={<DesignDetails />} />

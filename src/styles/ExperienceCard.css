@@ -10,3 +10,50 @@
   padding: 5px;
   border-radius: 50%;
 }
+
+button.experience-header {
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+button.experience-header:focus-visible {
+  outline: 2px solid #d4c3eb;
+  outline-offset: 2px;
+}
+
+.experience-chevron {
+  transition: transform 0.3s ease;
+}
+
+.experience-card.open .experience-chevron {
+  transform: rotate(180deg);
+}
+
+.experience-details {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.experience-card.open .experience-details {
+  grid-template-rows: 1fr;
+}
+
+.experience-highlights {
+  overflow: hidden;
+  min-height: 0;
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.experience-card:not(.open) .experience-highlights {
+  visibility: hidden;
+  transition: visibility 0s 0.3s;
+}
+
+.experience-highlights li {
+  margin-left: 1rem;
+  line-height: 1.6;
+}
