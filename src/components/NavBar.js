@@ -79,7 +79,7 @@ function NavBar(path) {
                         <div className="w-full">
                             <div className="pb-6 flex flex-col items-start">
                                 <div className="flex items-center gap-4">
-                                    <img src="technicallyti.png" alt="" width={50} className="rounded-full pb-1" />
+                                    <img src="technicallyti-thumb.webp" alt="" width={50} height={50} className="rounded-full pb-1" />
                                     <div>
                                         <h1 className="text-xl">Tarika Birch</h1>
                                         <h2 className="text-sm opacity-60">Software Engineer</h2>

@@ -16,7 +16,7 @@ function Home() {
         <div className='display flex flex-col items-center'>
             <section id="intro" className="min-h-[90vh]">
                 <div className="container flex flex-col items-center justify-center gap-2">
-                    <img className="avatar" src="technicallyti.png" alt="Tarika Birch" />
+                    <img className="avatar" src="technicallyti.webp" alt="Illustrated portrait of Tarika Birch" width={1000} height={1000} />
                     <div id="cursor-container-landing">
                         <img className="developer-cursor" src="assets/cursors/developer-cursor.png" alt="" />
                         <img className="designer-cursor" src="assets/cursors/designer-cursor.png" alt="" />
@@ -48,6 +48,19 @@ function Home() {
             <section id="experience-about" className="p-6">
                 <div className="container">
                     <h1 className='text-2xl md:text-4xl'>Who Am I?</h1>
+                    <div className="who-am-i flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 mt-6">
+                    <img
+                        className="profile-photo"
+                        src="assets/tarika-birch.webp"
+                        alt="Portrait of Tarika Birch"
+                        width={320}
+                        height={320}
+                        loading="lazy"
+                        decoding="async"
+                        data-aos="fade-right"
+                        data-aos-duration="800"
+                        data-aos-once="true"
+                    />
                     <div className="flex flex-col items-center justify-center gap-2">
                         <p className='md:text-lg p-2 pt-1 md:p-6 md:pt-1 opacity-80'>Software engineer who enjoys crafting user-friendly experiences</p>
 
@@ -94,6 +107,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
             </section>
