@@ -4,7 +4,7 @@ const awards = [
         type: "award",
         title: "2025 Winner of the Windrush I Accelerator Program",
         issuer: "Microsoft UK and UWI",
-        issued: "June 2025"
+        issued: "Jun 2025"
     },
     {
         id: 2,
@@ -49,7 +49,7 @@ const awards = [
         type: "award",
         title: "Gold Award for 'Angela Lansbury' - Fine Arts",
         issuer: "National Independence Festival of Creative Arts",
-        issued: "November 2019"
+        issued: "Nov 2019"
     },
     {
         id: 8,
