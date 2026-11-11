@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import '../styles/ExperienceCard.css'
 
-function ExperienceCard({ title, company, startDate, endDate, location, logo, highlights = [] }) {
-    const [open, setOpen] = useState(false)
+function ExperienceCard({ title, company, startDate, endDate, location, logo, highlights = [], defaultOpen = false }) {
+    const [open, setOpen] = useState(defaultOpen && highlights.length > 0)
     const expandable = highlights.length > 0
     const Header = expandable ? 'button' : 'div'
 
@@ -28,7 +28,10 @@ function ExperienceCard({ title, company, startDate, endDate, location, logo, hi
                     </div>
                 </div>
                 {expandable && (
-                    <i className="experience-chevron fa-solid fa-chevron-down opacity-70" aria-hidden="true"></i>
+                    <span className="experience-toggle flex items-center gap-2 text-sm shrink-0" aria-hidden="true">
+                        <span className="hidden sm:inline">{open ? 'Hide' : 'Details'}</span>
+                        <i className="experience-chevron fa-solid fa-chevron-down"></i>
+                    </span>
                 )}
             </Header>
 

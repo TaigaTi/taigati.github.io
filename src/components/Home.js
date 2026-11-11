@@ -118,7 +118,7 @@ function Home() {
                         data-aos-once="true"
                         data-aos-easing="ease-in-out"
                         className="experience-container flex flex-col gap-4 mt-4 p-2">
-                        {experience.map((experience) => {
+                        {experience.map((experience, index) => {
                             return (
                                 <ExperienceCard
                                     key={`${experience.company}-${experience.title}`}
@@ -129,6 +129,7 @@ function Home() {
                                     location={experience.location}
                                     logo={experience.logo}
                                     highlights={experience.highlights}
+                                    defaultOpen={index === 0}
                                 />
                             )
                         })}
