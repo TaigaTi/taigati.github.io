@@ -71,33 +71,33 @@ function Home() {
                             <div className='about-card px-6 flex items-center gap-4 min-h-[25%]'>
                                 <p className='text-5xl'>📚</p>
                                 <div className='text-start'>
-                                    <p className='pb-1'>Bsc. Computer Science with Management</p>
+                                    <p className='pb-1'>BSc. Computer Science with Management</p>
                                     <p className='pb-1'>First Class Honours</p>
                                     <p className='opacity-80'>GPA: 3.89</p>
                                 </div>
                             </div>
 
-                            <div className='about-card px-6 flex items-center gap-4'>
-                                <p className='text-5xl mb-2'>💻</p>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.tessera-studios.com" className='about-card about-card-link px-6 flex items-center gap-4'>
+                                <p className='text-5xl' aria-hidden="true">💻</p>
                                 <div className='text-start w-full'>
-                                    <p className='pb-1'>Founder of Tessera Studios</p>
+                                    <p className='pb-1'>
+                                        Founder of Tessera Studios
+                                        <i className="fa-solid fa-arrow-up-right-from-square about-card-link-icon ml-2" aria-hidden="true"></i>
+                                    </p>
                                     <p className='opacity-80'>Software Development Company</p>
-                                    <a target="_blank" rel="noopener noreferrer" href="https://www.tessera-studios.com" className='opacity-80 flex justify-end'>
-                                        <i className="mt-2 fa-solid fa-arrow-up-right-from-square"></i>
-                                    </a>
                                 </div>
-                            </div>
+                            </a>
 
-                            <div className='about-card px-6 flex items-center gap-4'>
-                                <p className='text-5xl mb-2'>🎨</p>
+                            <a target="_blank" rel="noopener noreferrer" href="https://querenciastudios.company.site" className='about-card about-card-link px-6 flex items-center gap-4'>
+                                <p className='text-5xl' aria-hidden="true">🎨</p>
                                 <div className='text-start w-full'>
-                                    <p className='pb-1'>Founder of Querencia Studios</p>
+                                    <p className='pb-1'>
+                                        Founder of Querencia Studios
+                                        <i className="fa-solid fa-arrow-up-right-from-square about-card-link-icon ml-2" aria-hidden="true"></i>
+                                    </p>
                                     <p className='opacity-80'>Art & Design Company</p>
-                                    <a target="_blank" rel="noopener noreferrer" href="https://querenciastudios.company.site" className='opacity-80 flex justify-end'>
-                                        <i className="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </a>
                                 </div>
-                            </div>
+                            </a>
 
                             <div className='about-card px-6 flex items-center gap-4'>
                                 <p className='text-5xl'>🏆</p>
@@ -118,7 +118,7 @@ function Home() {
 
                     <div className="experience-container flex flex-col gap-4 mt-4 p-2 pb-10">
                         <ExperienceCard
-                            title="Bsc. Computer Science with Management"
+                            title="BSc. Computer Science with Management"
                             company="University of the West Indies, Cave Hill"
                             startDate="Sep 2021"
                             endDate="May 2025"

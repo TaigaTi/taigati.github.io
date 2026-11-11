@@ -102,6 +102,32 @@
   padding: 30px;
 }
 
+.about-card-link {
+  color: inherit;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.about-card-link:hover {
+  background-color: #4d2f697a;
+  transform: translateY(-2px);
+}
+
+.about-card-link:focus-visible {
+  outline: 2px solid #d4c3eb;
+  outline-offset: 2px;
+}
+
+.about-card-link-icon {
+  font-size: 0.75em;
+  opacity: 0.6;
+  color: #d4c3eb;
+  transition: opacity 0.2s ease;
+}
+
+.about-card-link:hover .about-card-link-icon {
+  opacity: 1;
+}
+
 .tech-skills,
 .design-tools {
   padding: 30px;
