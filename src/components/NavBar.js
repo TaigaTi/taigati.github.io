@@ -39,6 +39,12 @@ function NavBar(path) {
             icon: 'fa-palette',
         },
         {
+            id: 6,
+            url: '/#/awards',
+            text: 'Awards',
+            icon: 'fa-award',
+        },
+        {
             id: 5,
             url: '/#/contact',
             text: 'Contact',
