@@ -9,7 +9,7 @@ const awards = [
     {
         id: 2,
         type: "award",
-        title: "3rd Place - Barbados AI Fraud Detection Hackathon - Zindi",
+        title: "3rd Place - Barbados AI Fraud Detection Hackathon",
         issuer: "Zindi",
         issued: "May 2025"
     },
