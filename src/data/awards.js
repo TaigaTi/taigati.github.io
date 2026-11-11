@@ -70,6 +70,36 @@ const awards = [
         issued: "Nov 2024"
     }, 
     {
+        id: 18,
+        type: "certificate",
+        title: "UX Design Fundamentals",
+        issuer: "Coursera",
+    },
+    {
+        id: 19,
+        type: "certificate",
+        title: "Visual Elements of User Interface Design",
+        issuer: "Coursera",
+    },
+    {
+        id: 20,
+        type: "certificate",
+        title: "TypeScript",
+        issuer: "Coursera",
+    },
+    {
+        id: 21,
+        type: "certificate",
+        title: "Frontend Development using Angular",
+        issuer: "Coursera",
+    },
+    {
+        id: 22,
+        type: "certificate",
+        title: "The Nest JS Bootcamp: Complete Developer Guide",
+        issuer: "Udemy",
+    },
+    {
         id: 11,
         type: "certificate",
         title: "JavaScript Basics",
