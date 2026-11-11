@@ -1,9 +1,17 @@
 const experience = [
     {
+        title: "Frontend Developer",
+        company: "GovTech Barbados",
+        startDate: "February 2026",
+        endDate: "Present",
+        location: "Hybrid, Barbados",
+        logo: "assets/logos/govtech-barbados.png",
+    },
+    {
         title: "Judiciary Software Engineer",
         company: "Supreme Court of Barbados",
         startDate: "September 2025",
-        endDate: "Present",
+        endDate: "February 2026",
         location: "Remote",
         logo: "assets/logos/supreme-court-barbados.jpg",
     },
