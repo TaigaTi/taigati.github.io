@@ -143,6 +143,7 @@ const awards = [
         id: 14,
         type: "certificate",
         title: "Knowledge Management",
+        image: "assets/certificates/knowledge-management.webp",
         issuer: "Info-Tech Academy",
         issued: "Jul 2023"
     },
@@ -150,6 +151,7 @@ const awards = [
         id: 15,
         type: "certificate",
         title: "Requirements Gathering",
+        image: "assets/certificates/requirements-gathering.webp",
         issuer: "Info-Tech Academy",
         issued: "Jun 2023"
     },
@@ -157,6 +159,7 @@ const awards = [
         id: 16,
         type: "certificate",
         title: "Organizational Change Management",
+        image: "assets/certificates/organizational-change-management.webp",
         issuer: "Info-Tech Academy",
         issued: "Jun 2023"
     },
@@ -164,6 +167,7 @@ const awards = [
         id: 17,
         type: "certificate",
         title: "Vendor Management",
+        image: "assets/certificates/vendor-management.webp",
         issuer: "Info-Tech Academy",
         issued: "Jul 2023"
     },
