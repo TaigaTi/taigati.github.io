@@ -89,7 +89,7 @@ function Contact() {
                                 </div>
                                 <p>tarika-birch</p>
                                 <div className="button flex flex-col items-center">
-                                    <a id="linkedin-button" className="rounded-3xl mt-5 mb-10 px-6 py-1 flex gap-2 items-center hover:scale-105 ease-in" href='https://www.linkedin.com/in/tarika-birch/'>
+                                    <a id="linkedin-button" className="rounded-3xl mt-5 mb-10 px-6 py-1 flex gap-2 items-center hover:scale-105 ease-in" target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/tarika-birch/'>
                                         Let's Connect
                                     </a>
                                 </div>
@@ -102,7 +102,7 @@ function Contact() {
                                 </div>
                                 <p>taigati</p>
                                 <div className="button flex flex-col items-center">
-                                    <a id="github-button" className="rounded-3xl mt-5 mb-10 px-6 py-1 flex gap-2 items-center hover:scale-105 ease-in" href='https://github.com/taigati'>
+                                    <a id="github-button" className="rounded-3xl mt-5 mb-10 px-6 py-1 flex gap-2 items-center hover:scale-105 ease-in" target="_blank" rel="noopener noreferrer" href='https://github.com/taigati'>
                                         View GitHub
                                     </a>
                                 </div>
@@ -114,7 +114,7 @@ function Contact() {
                                 </div>
                                 <p>tarikabirch</p>
                                 <div className="button flex flex-col items-center">
-                                    <a id="medium-button" className="rounded-3xl mt-5 mb-10 px-6 py-1 flex gap-2 items-center hover:scale-105 ease-in" href='https://medium.com/@tarikabirch'>
+                                    <a id="medium-button" className="rounded-3xl mt-5 mb-10 px-6 py-1 flex gap-2 items-center hover:scale-105 ease-in" target="_blank" rel="noopener noreferrer" href='https://medium.com/@tarikabirch'>
                                         Read Blog
                                     </a>
                                 </div>
@@ -126,7 +126,7 @@ function Contact() {
                                 </div>
                                 <p>Technically Ti</p>
                                 <div className="button flex flex-col items-center">
-                                    <a id="youtube-button" className="rounded-3xl mt-5 mb-10 px-6 py-1 flex gap-2 items-center hover:scale-105 ease-in" href="https://www.youtube.com/channel/UCuUPNYwnqCY2eSfPmztEsng?sub_confirmation=1">
+                                    <a id="youtube-button" className="rounded-3xl mt-5 mb-10 px-6 py-1 flex gap-2 items-center hover:scale-105 ease-in" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCuUPNYwnqCY2eSfPmztEsng?sub_confirmation=1">
                                         Subscribe
                                     </a>
                                 </div>

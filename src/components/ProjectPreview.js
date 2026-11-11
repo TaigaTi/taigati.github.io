@@ -6,7 +6,7 @@ function ProjectPreview({ id }) {
 
     return (
         <>
-            <a className="project-preview container text-start" href={project.link || project.repo} >
+            <a className="project-preview container text-start" target="_blank" rel="noopener noreferrer" href={project.link || project.repo} >
                 <img className="project-image h-1/2" loading="lazy" decoding="async" src={project.image} alt={project.title} />
                 <div className='project-info h-1/2 container p-6 pt-4 pb-8 flex flex-col justify-evenly'>
                     <div className="project-text pb-1">

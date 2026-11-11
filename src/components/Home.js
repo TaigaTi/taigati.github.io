@@ -67,7 +67,7 @@ function Home() {
                                 <div className='text-start w-full'>
                                     <p className='pb-1'>Founder of Tessera Studios</p>
                                     <p className='opacity-80'>Software Development Company</p>
-                                    <a href="https://www.tessera-studios.com" className='opacity-80 flex justify-end'>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.tessera-studios.com" className='opacity-80 flex justify-end'>
                                         <i className="mt-2 fa-solid fa-arrow-up-right-from-square"></i>
                                     </a>
                                 </div>
@@ -78,7 +78,7 @@ function Home() {
                                 <div className='text-start w-full'>
                                     <p className='pb-1'>Founder of Querencia Studios</p>
                                     <p className='opacity-80'>Art & Design Company</p>
-                                    <a href="https://querenciastudios.company.site" className='opacity-80 flex justify-end'>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://querenciastudios.company.site" className='opacity-80 flex justify-end'>
                                         <i className="fa-solid fa-arrow-up-right-from-square"></i>
                                     </a>
                                 </div>

@@ -18,19 +18,22 @@ const awards = [
         type: "award",
         title: "Faculty of Science & Technology Student Award",
         issuer: "FST, UWI",
-        issued: "Oct 2022"
+        issued: "Oct 2022",
+        image: "assets/awards/fst-deans-list-2022.webp"
     },
     {
         id: 4,
         type: "award",
         title: "Faculty of Science & Technology Student Award",
         issuer: "FST, UWI",
-        issued: "Oct 2023"
+        issued: "Oct 2023",
+        image: "assets/awards/fst-deans-list-2023.webp"
     },
     {
         id: 5,
         type: "award",
         title: "Incentive Award for Excellence In Visual Arts",
+        image: "assets/awards/nifca-incentive-award-2019.webp",
         issuer: "National Independence Festival of Creative Arts",
         issued: "Nov 2019"
     },
